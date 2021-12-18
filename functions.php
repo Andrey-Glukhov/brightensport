@@ -47,6 +47,8 @@ add_theme_support('custom-header');
 add_theme_support('post-formats', array('aside', 'chat', 'gallery','link','image','quote','status','video'));
 add_theme_support('post-thumbnails');
 
+//add_theme_support('widgets');
+
 // add_filter( 'wp_nav_menu_items', 'brs_menu_items', 10, 2);
 
 // function brs_menu_items($items, $args) {
@@ -66,3 +68,22 @@ add_theme_support('post-thumbnails');
 //     // $items = implode('', $result);
 //     return $items;
 // }
+
+//Add  sidebar
+function brs_register_wp_sidebars() {
+ 
+	/* Footer sidebar */
+	register_sidebar(
+		array(
+			'id' => 'true_foot',
+			'name' => 'Footer',
+			'description' => 'Drag widgets here to add them to footer',
+			'before_widget' => '<div id="%1$s" class="foot widget %2$s">',
+			'after_widget' => '</div>',
+			'before_title' => '<h3 class="widget-title">',
+			'after_title' => '</h3>'
+		)
+	);
+}
+ 
+add_action( 'widgets_init', 'brs_register_wp_sidebars' );

@@ -144,3 +144,42 @@ footer
   display: flex;
   align-items: center;
 }
+.footer-navigation, .footer-contact {
+  padding: 1rem 0;
+}
+.footer-navigation li a, .footer-contact p, .mc4wp-form-fields input {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 400;  
+  color: #ffffff;
+  font-size: 1.4rem;
+}
+.footer-navigation li a {
+  text-decoration: none;
+}  
+.mc4wp-form.mc4wp-form-41 {
+  background-color: var(--main_black);
+}
+.mc4wp-form-fields {
+  display: flex;
+  justify-content: center;
+
+}
+.mc4wp-form-fields>p {
+  padding: 0 1.6rem;
+}  
+.mc4wp-form-fields input{
+  padding: 5px 5px;
+  background-color: var(--main_black);
+  border: none;
+  border-bottom: 2px #ffffff solid;
+}
+.mc4wp-form-fields input[type=submit]{
+  padding: 5px 5px;
+  border: 2px #ffffff solid;
+  border-radius: 1.4rem; 
+} 
+.mc4wp-form-fields input::placeholder {
+  color: #ffffff;
+} 
+
+ 
