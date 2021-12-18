@@ -182,4 +182,134 @@ footer
   color: #ffffff;
 } 
 
- 
+/*--------------------------------------------------------------
+Home Main
+--------------------------------------------------------------*/
+.main-wrapper {
+  overflow: hidden;
+}
+.back1-img {
+    padding: 0;
+    position: relative;
+}
+.back1-img>img {
+    width: 100%;
+    height: auto;
+}
+.back1-img>svg {
+  width: 100%;
+  height: auto;
+}
+.white-back-2 {
+  width:  100%;
+  min-height: 1880px;
+  background-color: #ffffff;
+}
+.black-back-1 {
+  width:  100%;
+  min-height: 940px;
+  background-color:var(--main_black);
+}
+.green-back-1 {
+  width:  100%;
+  min-height: 940px;
+  background-color:var(--main_green);
+}
+.circle {
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  z-index: 5;
+}
+.cir_1 {
+  top: 0;
+  transform: translate(-50%, 20%);
+}
+.cir_2 {
+  right: 0;
+  bottom: 0;
+  transform: translate(30%, 40%);
+}
+.cir_3 {
+  top: 0;
+  left: 0;
+  transform: translate(-50%, 30%);
+}
+.cir_4 {
+  left: 0;
+  bottom: 0;
+  transform: translate(-45%, 100%);
+}
+.cir_5 {
+  right: 0;
+  top: 0;
+  transform: translate(50%, -70%);
+}
+.cir_6 {
+  right: 0;
+  bottom: 0;
+  transform: translate(30%, 30%);
+}
+.abs-picture {
+  position: absolute;
+  z-index: 10;
+  height: auto;
+}
+.abs-picture img {
+  width: 100%;
+  height: auto;
+}
+.pic_1 {
+  width: 30%; 
+  top: 0;
+  left: 0;
+  transform: translate(5%, 40%)
+}
+.pic_2 {
+  right: 0;
+  bottom: 0;
+  width: 50%;
+  }
+.pic_3 {
+  width: 40%;
+  bottom: 0;
+  right: 0;
+  transform: translate(0, 29%);  
+}
+
+/*--------------------------------------------------------------
+Carousel
+--------------------------------------------------------------*/
+@media (max-width: 767px) {
+  .carousel-inner .carousel-item > div {
+      display: none;
+  }
+  .carousel-inner .carousel-item > div:first-child {
+      display: block;
+  }
+}
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+  display: flex;
+}
+
+/* medium and up screens */
+@media (min-width: 768px) {
+  
+  .carousel-inner .carousel-item-end.active,
+  .carousel-inner .carousel-item-next {
+    transform: translateX(25%);
+  }
+  
+  .carousel-inner .carousel-item-start.active, 
+  .carousel-inner .carousel-item-prev {
+    transform: translateX(-25%);
+  }
+}
+
+.carousel-inner .carousel-item-end,
+.carousel-inner .carousel-item-start { 
+transform: translateX(0);
+}
