@@ -6,15 +6,28 @@
 ?>
 
 <footer id="footer" class="site-footer container-fluid" role="contentinfo">
+
+    <div id="footer-sidebar" class="secondary">
+        <div id="footer-sidebar1">
+            <?php
+if(is_active_sidebar('true_foot')){
+dynamic_sidebar('true_foot');
+}
+?>
+        </div>
+
+    </div>
+
+
     <!-- <div class="container-fluid"> -->
     <div class="social-icons  d-flex flex-row justify-content-center">
-        <a href="http://facebook.com/brightensport-111997390525646" target=blank>
+        <a href="https://www.facebook.com/brightensport-111997390525646" target=blank>
             <div class="icon-image" id="icon_fb"></div>
         </a>
         <a href="https://www.instagram.com/brightensport/" target=blank>
             <div class="icon-image" id="icon_inst"></div>
         </a>
-        <a href="https://www.linkedin.com/company/brightensport" target=blank>
+        <a href="https://www.linkedin.com/company/brightensport/" target=blank>
             <div class="icon-image" id="icon_ln"></div>
         </a>
         <a href="https://www.crunchbase.com/organization/brightensport" target=blank>
@@ -27,7 +40,7 @@
     <!-- </div> -->
     <div class="row footer-dark">
         <div class="footer-logo col-3">
-            <img src="<?php echo  get_template_directory_uri()?>/img/logo_g.png" />
+            <img src="<?php echo  get_template_directory_uri()?>/img/blogo-tuerkis.png" />
         </div>
         <nav id="footer-navigation-left" class="footer-navigation col-3" role="navigation">
 
@@ -61,13 +74,13 @@
 				?>
         </nav><!-- #footer-navigation -->
         <div class="footer-contact col-3">
-            <p> E-mail address</p>
-            <p> Phone -number</p>
+            <p> <a target="_blank" href="mailto:hello@brightensport.com">hello@brightensport.com</a></p>
+            <p> <a target="_blank" href="https://app.brightensport.com/pro-signup">Für Spitzensportler:innen​</a></p>
         </div>
     </div> <!-- row-->
     <div class="row footer-form">
 
-     <?php echo do_shortcode('[mc4wp_form id="41"]'); ?>
+        <?php echo do_shortcode('[mc4wp_form id="41"]'); ?>
 
     </div>
 </footer><!-- #footer -->
