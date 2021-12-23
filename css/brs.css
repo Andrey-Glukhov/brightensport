@@ -47,23 +47,26 @@ navigation
   background-image: url(../img/bars_solid.svg);
 }
 
-.primary-navigation .menu-item a {
+.primary-navigation .menu-item a,
+#secondary-menu-list .menu-item a {
   font-family: 'Barlow Condensed', sans-serif;
   font-size: 1.5rem;
-  font-weight: 700;
+  font-weight: 500;
   color: #ffffff;
   text-transform: uppercase;
   text-decoration: none;
+  display: flex;
+  align-items: center;
 }
-.primary-navigation .menu-item {
+
+.primary-navigation .menu-item,
+#secondary-menu-list .menu-item{
   padding: 5px 10px;
 }
 
 .primary-navigation  .navbar-toggler:focus {
     box-shadow: 0 0 0 0.25rem #ffffff;
 }   
-
-
 .offcanvas-collapse {
     position: fixed;
     top: 0px;
@@ -88,7 +91,15 @@ navigation
 .buttons-navigation {
   position:fixed;
   top: 0;
-  right: 0in;
+  right: 0;
+  height: 62px;
+  background: var(--main_green);
+  z-index: 100;
+}
+.navbar-brand img,
+.footer-logo img{
+  height: 35px;
+  width: auto;
 }
 
 @media (min-width: 992px) {
@@ -100,7 +111,25 @@ navigation
     justify-content: flex-start;
   }
 }
-
+.secondary-menu-container{
+  height: 100%;
+}
+#secondary-menu-list{
+display: flex;
+margin: 0;
+height: 100%;
+align-items: center;
+}
+#menu-item-18 a{
+  padding: 0 15px;
+  border: 2px solid #003641;
+  border-radius: 50px;
+  color:#003641 !important;
+}
+#menu-item-19{
+display: flex;
+align-items: center;
+}
 
 /*--------------------------------------------------------------
 footer
@@ -142,16 +171,22 @@ footer
 }
 .footer-logo {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
+  padding-top: 1rem;
 }
 .footer-navigation, .footer-contact {
-  padding: 1rem 0;
+  padding: 1rem;
 }
-.footer-navigation li a, .footer-contact p, .mc4wp-form-fields input {
+.footer-contact p{
+  margin-bottom: 0;
+  text-align: end;
+}
+
+.footer-navigation li a, .footer-contact p, .mc4wp-form-fields input, .footer-contact p>a {
   font-family: 'Barlow Condensed', sans-serif;
   font-weight: 400;  
   color: #ffffff;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
 }
 .footer-navigation li a {
   text-decoration: none;
