@@ -102,18 +102,28 @@ get_header(); ?>
 
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h5 class="card-title"><?php the_field('sub_title'); ?></h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                    aria-label="Close"></button>
-                            </div>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            <div class="header-title-wrapper"><h5 class="card-title"><?php the_field('sub_title'); ?></h5></div>
+                            <div class="title-placeholder"></div>
+                            </div> 
                             <div class="modal-body card-modal-body">
-                                <img src="<?php the_field('image')?>" class="d-block " alt="">
-                                <div><?php the_field('description')?>)</div>
+                                <div class="card-body-left">
+                                    <!-- <h5 class="card-title"><?php the_field('sub_title'); ?></h5> -->
+                                    <img src="<?php the_field('image')?>" class="d-block " alt="">
+                                    <p class="card-text"><?php the_field('name')?></p>
+                                </div>
+                                <div class="card-body-right">
+                                    <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" -->
+                                        <!-- aria-label="Close"></button>  -->
+                                    <div class="card-right-text"><?php the_field('description')?>)</div>
+                                    <a href="https://app.brightensport.com/login" class="card-link">Book a session now<span class="book-arrow"><span class="fa  fa-arrow-right"></span></span></a>
+                                </div>
                             </div>
-                            <div class="modal-footer">
-                            <p class="card-text"><?php the_field('name')?></p>
-                                <a href="https://app.brightensport.com/login" class="card-text">Book a session now<span class="book-arrow"><span class="fa  fa-arrow-right"></span></span></a>
-                            </div>
+                            <!-- <div class="modal-footer">
+                                <p class="card-text"><?php the_field('name')?></p>
+                                <a href="https://app.brightensport.com/login" class="card-link">Book a session now<span class="book-arrow"><span class="fa  fa-arrow-right"></span></span></a>
+                               
+                            </div> -->
                         </div>
                     </div>
                 </div>
