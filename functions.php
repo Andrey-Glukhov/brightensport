@@ -90,3 +90,12 @@ function brs_register_wp_sidebars() {
 }
  
 add_action( 'widgets_init', 'brs_register_wp_sidebars' );
+
+
+function addpagecontent_function() {
+	ob_start();
+	get_template_part('template-parts/faq');
+	$result = ob_get_clean();
+	return $result;
+}
+add_shortcode('addpagecontent', 'addpagecontent_function');

@@ -56,12 +56,8 @@ get_header(); ?>
         </div>
 
     </div>
-    <div class="row">
-        <div class="back1-img col-12">
-            <img src="<?php echo  get_template_directory_uri()?>/img/back3.svg" alt="">
-        </div>
-    </div>
-    <div class="row">
+    
+    <div class="row with_background main_green">
         <div class="back1-img col-12">
             <div class="green-back-1">
                 <div class="owl-carousel">
@@ -125,37 +121,11 @@ get_header(); ?>
             </div>
         </div>
     </div>
-    <div class="row">
-        <div class="back1-img col-12">
-            <img src="<?php echo  get_template_directory_uri()?>/img/back4.svg" alt="">
-        </div>
-    </div>
-    <div class="row">
-        <div class="back1-img col-12">
-            <div class="black-back-1"></div>
-            <div class="circle cir_4">
-                <img src="<?php echo  get_template_directory_uri()?>/img/stripe.svg" alt="">
-            </div>
-            <div class="circle cir_5">
-                <img src="<?php echo  get_template_directory_uri()?>/img/stripe.svg" alt="">
-            </div>
-        </div>
 
-    </div>
-    <div class="row">
-        <div class="back1-img col-12">
-            <img src="<?php echo  get_template_directory_uri()?>/img/back5.svg" alt="">
-        </div>
-    </div>
-    <div class="row">
-        <div class="back1-img col-12">
-            <div class="white-back-2"></div>
-            <div class="circle cir_6">
-                <img src="<?php echo  get_template_directory_uri()?>/img/stripe.svg" alt="">
-            </div>
-        </div>
 
-    </div>
+
+    <?php the_content();?>
+
 </div>
 
 <?php get_footer(); ?>
