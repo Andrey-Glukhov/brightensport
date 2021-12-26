@@ -3,7 +3,8 @@ jQuery(document).ready(function($) {
     var owl = $('.owl-carousel').owlCarousel({
     loop:true,
     nav:true,
-    navText: ['',''],
+    //navText: ['',''],
+    navText : ['<i class="fa fa-angle-left" aria-hidden="true"></i>','<i class="fa fa-angle-right" aria-hidden="true"></i>'],
     dots: false,
     margin:10,
     responsiveClass:true,
@@ -23,10 +24,10 @@ jQuery(document).ready(function($) {
             loop:false
         }
     },
-    onInitialized: function(event) {
-        var linkElement = '<a href="#" class="book-pro-link">Book your Pro</a>';
-        $('.green-back-1 .owl-carousel .owl-nav button.owl-prev').after(linkElement);
-    }
+    // onInitialized: function(event) {
+    //     var linkElement = '<a href="#" class="book-pro-link">Book your Pro</a>';
+    //     $('.green-back-1 .owl-carousel .owl-nav button.owl-prev').after(linkElement);
+    // }
 });
 });
 
