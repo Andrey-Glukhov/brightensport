@@ -33,9 +33,6 @@ function brs_theme_setup(){
 	register_nav_menu('secondary', 'Header Buttons Navigation');
 	register_nav_menu('footermenu_left', 'Footer Navigation Left');
 	register_nav_menu('footermenu_right', 'Footer Navigation Right');
-}
-add_action('init', 'brs_theme_setup');
-
 
 /*
 	==========================================
@@ -43,13 +40,17 @@ add_action('init', 'brs_theme_setup');
 	==========================================
 */
 
+	add_theme_support('custom-background');
+	add_theme_support('custom-header');
+	add_theme_support('post-formats', array('aside', 'chat', 'gallery','link','image','quote','status','video'));
+	add_theme_support('post-thumbnails');
+	add_theme_support('navigation-widgets');
 
-add_theme_support('custom-background');
-add_theme_support('custom-header');
-add_theme_support('post-formats', array('aside', 'chat', 'gallery','link','image','quote','status','video'));
-add_theme_support('post-thumbnails');
+	add_theme_support('widgets');
+	
+}
+add_action('init', 'brs_theme_setup');
 
-//add_theme_support('widgets');
 
 // add_filter( 'wp_nav_menu_items', 'brs_menu_items', 10, 2);
 
