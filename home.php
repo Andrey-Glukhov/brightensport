@@ -64,62 +64,61 @@ get_header(); ?>
     <div class="row">
         <div class="back1-img col-12">
             <div class="green-back-1">
-            <div class="owl-carousel">
-                <div class="card">
-                    <div class="card_placeholder"></div>   
-                    <img src="<?php echo  get_template_directory_uri()?>/img/DavidSpeiser1.png" class="d-block w-100"
-                        alt="img/">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title 2</h5>
-                        <img src="<?php echo  get_template_directory_uri()?>/img/DavidSpeiser1.png" class="d-block w-100"
-                        alt="img/">
-                        <p class="card-text">Some quick example text to build on the card title and make up
-                            the
-                            bulk of the
-                            card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                <div class="owl-carousel">
+                    <?php $args = array(  
+                            'post_type' => 'cardgallery',
+                            'post_status' => 'publish',
+                            'posts_per_page' => -1, 
+                            // 'orderby' => 'title', 
+                            // 'order' => 'ASC', 
+                        );
+
+                    $loop = new WP_Query( $args ); 
+                    $count = 1;  
+                    //error_log('---LOOP--'. print_r($loop->have_posts(),true)); 
+                    while ( $loop->have_posts() ) : $loop->the_post(); ?>
+                    <div class="card" id="gallery_card_<?php echo $count;?>" data-bs-toggle="modal"
+                        data-bs-target="#gallery_modal_<?php the_ID()?>">
+                        <?php if ($count % 2 == 0):?>
+                        <div class="card_placeholder"></div>
+                        <?php endif;?>
+                        <div class="card-body">
+                            <h5 class="card-title"><?php the_field('sub_title'); ?></h5>
+                            <img src="<?php the_field('image')?>" class="d-block w-100" alt="">
+                            <p class="card-text"><?php the_field('name')?></p>
+                        </div>
+                        <?php if ($count % 2 != 0):?>
+                        <div class="card_placeholder"></div>
+                        <?php endif;?>
+                    </div>
+
+                    <?php  $count++;
+                    endwhile;
+                wp_reset_postdata(); ?>
+                </div>
+                <?php  while ( $loop->have_posts() ) : $loop->the_post();?>
+                <div class="modal fade" id="gallery_modal_<?php the_ID()?>">
+                    <div class="modal-dialog modal-dialog-centered">
+
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="card-title"><?php the_field('sub_title'); ?></h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body card-modal-body">
+                                <img src="<?php the_field('image')?>" class="d-block " alt="">
+                                <div><?php the_field('description')?>)</div>
+                            </div>
+                            <div class="modal-footer">
+                            <p class="card-text"><?php the_field('name')?></p>
+                                <a href="#" class="card-text">Book a session now<span class="book-pro-arrow"></span></a>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="card">
-                    <img src="<?php echo  get_template_directory_uri()?>/img/LauraVetterlein1.png" class="d-block w-100"
-                        alt="img/">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title 2</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up
-                            the
-                            bulk of the
-                            card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                    <div class="card_placeholder"></div>   
-                </div>
-                <div class="card">
-                    <div class="card_placeholder"></div>   
-                    <img src="<?php echo  get_template_directory_uri()?>/img/LarsConzendorf1.png" class="d-block w-100"
-                        alt="img/">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title 2</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up
-                            the
-                            bulk of the
-                            card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="<?php echo  get_template_directory_uri()?>/img/FranziAlbl1.png" class="d-block w-100"
-                        alt="img/">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title 2</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up
-                            the
-                            bulk of the
-                            card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                    <div class="card_placeholder"></div>   
-                </div>
-            </div>
+                <?php endwhile;
+                wp_reset_postdata(); ?>
             </div>
         </div>
     </div>
