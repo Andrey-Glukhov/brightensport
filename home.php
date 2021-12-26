@@ -112,13 +112,16 @@ get_header(); ?>
                             </div>
                             <div class="modal-footer">
                             <p class="card-text"><?php the_field('name')?></p>
-                                <a href="#" class="card-text">Book a session now<span class="book-pro-arrow"></span></a>
+                                <a href="https://app.brightensport.com/login" class="card-text">Book a session now<span class="book-arrow"><span class="fa  fa-arrow-right"></span></span></a>
                             </div>
                         </div>
                     </div>
                 </div>
                 <?php endwhile;
                 wp_reset_postdata(); ?>
+                <div class="book-link-wrapper">
+                <a href="https://app.brightensport.com/login" class="book-pro-link">Book your Pro</a>
+                </div>
             </div>
         </div>
     </div>
