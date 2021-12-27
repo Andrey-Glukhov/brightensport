@@ -61,7 +61,7 @@ li {
     top: 0;
     right: 0;
     bottom: 0;
-    transform: skewY(-11deg);
+    transform: skewY(-9deg);
     transform-origin: 50% 0;
     outline: 1px solid transparent;
     backface-visibility: hidden;
@@ -71,6 +71,9 @@ li {
 }
 .with_background.main_black:before{
   background: var(--main_black);
+}
+.with_background.main_white:before{
+  background: #ffffff;
 }
 .with_background{
   position: relative;
@@ -82,9 +85,9 @@ li {
   z-index: 100;
   font-family: 'Barlow Condensed', sans-serif;
   font-weight: 600;
-  font-size: 3rem;
+  font-size: 4rem;
   line-height: 1.5;
-  margin-bottom: 50px;
+  margin-bottom: 10px;
 }
 /*--------------------------------------------------------------
 navigation
@@ -135,7 +138,6 @@ navigation
   padding-left: 1rem;
   overflow-y: auto;
   visibility: hidden;
-  background-color: var(--main_green);
   transition: transform 0.6s ease-in-out, visibility 0.6s ease-in-out;
   display: flex;
   justify-content: center;
@@ -151,7 +153,6 @@ navigation
   top: 0;
   right: 0;
   height: 62px;
-  background: var(--main_green);
   z-index: 100;
 }
 .navbar-brand img,
@@ -162,11 +163,14 @@ navigation
 
 @media (min-width: 992px) {
   .offcanvas-collapse {
-    position: inherit;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
     visibility: visible;
   }
   .primary-navigation .navbar-collapse {
-    justify-content: flex-start;
+    justify-content: center;
   }
 }
 .secondary-menu-container {
@@ -183,6 +187,7 @@ navigation
   border: 2px solid #003641;
   border-radius: 50px;
   color: #003641 !important;
+  background: var(--main_green);
 }
 #menu-item-19 {
   display: flex;
@@ -262,6 +267,7 @@ footer
 }
 .mc4wp-form-fields > p {
   padding: 0 1.6rem;
+  display: flex;
 }
 .mc4wp-form-fields input {
   padding: 5px 5px;
@@ -270,14 +276,32 @@ footer
   border-bottom: 2px #ffffff solid;
 }
 .mc4wp-form-fields input[type="submit"] {
-  padding: 5px 5px;
+  padding: 0 15px;
   border: 2px #ffffff solid;
   border-radius: 1.4rem;
+  text-transform: uppercase;
 }
+
 .mc4wp-form-fields input::placeholder {
   color: #ffffff;
 }
-
+.foot.widget.widget_block .wp-block-group__inner-container{
+  display: flex;
+  justify-content: center;
+}
+.foot.widget.widget_block .wp-block-image>img{
+  width: 50px;
+  height: 50px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0 3%;
+}
+.foot.widget.widget_block .wp-block-image{
+  margin: 10px;
+}
+.site-footer{
+  background-color: var(--main_green);
+}
 /*--------------------------------------------------------------
 Home Main
 --------------------------------------------------------------*/
@@ -287,6 +311,30 @@ Home Main
 .back1-img {
   padding: 0;
   position: relative;
+}
+.opener{
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background-position: top right;
+  background-size: cover;
+}
+.opener_overlay{
+  position: relative;
+  height: 100vh;
+}
+.page_title{
+  position: relative;
+  z-index: 100;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 600;
+  font-size: 4rem;
+  line-height: 3.7rem;
+  color: #ffffff;
+  margin-top: 15px;
+}
+.margin_negative{
+  margin-top: -110px;
 }
 .back1-img > img {
   width: 100%;
@@ -308,9 +356,9 @@ Home Main
 }
 .green-back-1 {
   width: 100%;
-  min-height: 940px;
+  min-height: 90vh;
   background-color: var(--main_green);
-  padding: 3rem 3rem;
+  padding: 1rem 3rem;
 }
 .circle {
   position: absolute;
@@ -372,6 +420,9 @@ Home Main
   bottom: 0;
   right: 0;
   transform: translate(0, 29%);
+}
+.line_container{
+  position: relative;
 }
 /*--------------------------------------------------------------
 FAQ
@@ -456,7 +507,7 @@ Carousel
 }
 
 .card_placeholder {
-  height: 5vw;
+  height: 15vw;
 }
 .card-modal-body {
   display: flex;
@@ -560,7 +611,22 @@ Carousel
   padding: 0.5rem 40px;
   border-radius: 1.7rem;
 }
-
+.profis{
+  text-align: end;
+  color: #ffffff;
+}
+.spitzensportler-message{
+  position: relative;
+  text-align: center;
+  margin: 20px 0;
+}
+.spitzensportler-message p,
+.spitzensportler-message p a{
+  font-family: 'Barlow', sans-serif;
+  color: #ffffff;
+  font-size: 1.1rem;
+  margin-bottom: 4px;
+}
 /*--------------------------------------------------------------
 Media
 --------------------------------------------------------------*/

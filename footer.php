@@ -19,7 +19,7 @@ dynamic_sidebar('true_foot');
     </div>
 
 
-    <!-- <div class="container-fluid"> -->
+    <!-- <div class="container-fluid"> 
     <div class="social-icons  d-flex flex-row justify-content-center">
         <a href="https://www.facebook.com/brightensport-111997390525646" target=blank>
             <div class="icon-image" id="icon_fb"></div>
@@ -37,12 +37,13 @@ dynamic_sidebar('true_foot');
             <div class="icon-image" id="icon_v"></div>
         </a>
     </div>
-    <!-- </div> -->
-    <div class="row footer-dark">
-        <div class="footer-logo col-3">
+   </div> -->
+
+    <div class="row justify-content-center footer-dark">
+        <div class="footer-logo col-md-4 col-sm-6 oder-1">
             <img src="<?php echo  get_template_directory_uri()?>/img/blogo-tuerkis.png" />
         </div>
-        <nav id="footer-navigation-left" class="footer-navigation col-3" role="navigation">
+        <nav id="footer-navigation-left" class="footer-navigation col-md-2 col-sm-4 order-md-2 order-sm-3 order-3" role="navigation">
 
 
             <?php
@@ -58,7 +59,7 @@ dynamic_sidebar('true_foot');
 				?>
         </nav><!-- #footer-navigation -->
 
-        <nav id="footer-navigation-right" class="footer-navigation col-3" role="navigation">
+        <nav id="footer-navigation-right" class="footer-navigation col-md-2 col-sm-4 order-md-3 order-sm-4 order-4" role="navigation">
 
 
             <?php
@@ -73,7 +74,7 @@ dynamic_sidebar('true_foot');
 				);
 				?>
         </nav><!-- #footer-navigation -->
-        <div class="footer-contact col-3">
+        <div class="footer-contact col-md-4 col-sm-6 order-md-4 order-sm-2 order-2">
             <p> <a target="_blank" href="mailto:hello@brightensport.com">hello@brightensport.com</a></p>
             <p> <a target="_blank" href="https://app.brightensport.com/pro-signup">Für Spitzensportler:innen​</a></p>
         </div>
