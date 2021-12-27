@@ -4,6 +4,7 @@ if ( $faq->have_posts() ) : while ( $faq->have_posts() ) : $faq->the_post();
 ?>
 <?php if( have_rows('faq_group') ): ?>
 
+
 <div class="accordion accordion-faq" id="faq_accordion">
 
     <?php while( have_rows('faq_group') ): the_row();
