@@ -627,6 +627,15 @@ Carousel
   font-size: 1.1rem;
   margin-bottom: 4px;
 }
+.testimonials-heading {
+  text-align: end;
+  color: var(--main_red);
+}
+.white-back-3 {
+  width: 100%;
+  min-height: 90vh;
+  background-color: #ffffff;
+}
 /*--------------------------------------------------------------
 Media
 --------------------------------------------------------------*/

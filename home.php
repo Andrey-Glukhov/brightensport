@@ -218,7 +218,7 @@ get_header(); ?>
         </div>
         <div class="back1-img col-12">
             <div class="green-back-1">
-                <div class="owl-carousel">
+                <div class="owl-carousel" id="owl-carousel">
                     <?php $args = array(  
                             'post_type' => 'cardgallery',
                             'post_status' => 'publish',
@@ -229,7 +229,6 @@ get_header(); ?>
 
                     $loop = new WP_Query( $args ); 
                     $count = 1;  
-                    //error_log('---LOOP--'. print_r($loop->have_posts(),true)); 
                     while ( $loop->have_posts() ) : $loop->the_post(); ?>
                     <div class="card" id="gallery_card_<?php echo $count;?>" data-bs-toggle="modal"
                         data-bs-target="#gallery_modal_<?php the_ID()?>">
@@ -262,22 +261,14 @@ get_header(); ?>
                             </div> 
                             <div class="modal-body card-modal-body">
                                 <div class="card-body-left">
-                                    <!-- <h5 class="card-title"><?php the_field('sub_title'); ?></h5> -->
                                     <img src="<?php the_field('image')?>" class="d-block " alt="">
                                     <p class="card-text"><?php the_field('name')?></p>
                                 </div>
                                 <div class="card-body-right">
-                                    <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" -->
-                                        <!-- aria-label="Close"></button>  -->
                                     <div class="card-right-text"><?php the_field('description')?>)</div>
                                     <a href="https://app.brightensport.com/login" class="card-link">Book a session now<span class="book-arrow"><span class="fa  fa-arrow-right"></span></span></a>
                                 </div>
                             </div>
-                            <!-- <div class="modal-footer">
-                                <p class="card-text"><?php the_field('name')?></p>
-                                <a href="https://app.brightensport.com/login" class="card-link">Book a session now<span class="book-arrow"><span class="fa  fa-arrow-right"></span></span></a>
-                               
-                            </div> -->
                         </div>
                     </div>
                 </div>
@@ -295,6 +286,43 @@ get_header(); ?>
     </div>
 
     <?php the_content();?>
+
+    <div id="testimonials" class="row justify-content-center with_background main_white">
+        <div class="col-md-10 col-sm-11 col-11">
+               <h2 class="section_title testimonials-heading">TESTIMONIALS​</h2>
+        </div>
+        <div class="back1-img col-12">
+            <div class="white-back-3">
+                <div class="owl-testimonial owl-carousel" id="owl-testimonial">
+                    <?php $args = array(  
+                            'post_type' => 'testimonials',
+                            'post_status' => 'publish',
+                            'posts_per_page' => -1,                           
+                        );
+                    $loopt = new WP_Query( $args ); 
+                    while ( $loopt->have_posts() ) : $loopt->the_post(); ?>
+                    <div class="card" id="gallery_card_<?php the_ID()?>">
+                        <div class="card-body">
+                            <img src="<?php the_field('image')?>" class="d-block w-100" alt="">
+                            <div class="card-text"><?php the_field('name')?></div>
+                            <div class="card-text"><?php the_field('age')?></div>
+                            <h5 class="card-title"><?php the_field('heading'); ?></h5>
+                            <div class="card-text"><?php the_field('content')?></div>
+                        </div>                        
+                    </div>
+
+                    <?php  endwhile;
+                wp_reset_postdata(); ?>
+                </div>                    
+            </div>
+        </div>
+    </div>
+
+        <div class="col-12 spitzensportler-message">
+            <p>Du bist selbst Spitzensportler:in?​</p>
+            <p><a href="https://app.brightensport.com/pro-signup" target="_blank">Dann melde Dich gleich an!</a>​</p>
+        </div>
+    </div>
 
 </div>
 
