@@ -788,6 +788,7 @@ Carousel
 .testimonials-heading {
   text-align: end;
   color: var(--main_red);
+  padding-bottom: 20px;
 }
 .white-back-3 {
   width: 100%;
@@ -795,10 +796,12 @@ Carousel
   background-color: #ffffff;
   padding: 1rem 3rem;
 }
-.white-back-3 .card {
-
-
+.white-back-3 .card-body {
+  box-shadow: 0 0 5px 5px rgba(68,212,188,0.6); 
 }
+.white-back-3 .card {
+  padding: 20px;
+}  
 .card-name {
   font-size: 2rem;
   font-weight: 700;
