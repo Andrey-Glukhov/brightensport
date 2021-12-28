@@ -27,9 +27,197 @@ get_header(); ?>
         </div>
     </div>
 
-<!--       steps line         -->
+    <!--       steps line         -->
 
-    <div id="was_ist" class="row with_background main_white margin_negative">
+    <div class="row with_background main_white margin_negative">
+        <div class="grid_container">
+            <div class="circle_one">
+            </div>
+            <div class="tennis-player">
+            </div>
+            <div class="circle_two">
+            </div>
+            <div class="basketball-player">
+            </div>
+            <div class="circle_three">
+            </div>
+            <div class="run">
+            </div>
+
+            <div class="about_app_begining">
+                <p>Brightensport ist die Plattform, auf der Du die besten Spitzensportler:innen persönlich um Rat fragen
+                    kannst.​</p>
+            </div>
+
+
+            <div class="number_one">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1643.32 379.66">
+                    <defs>
+                        <style>
+                        .num-1 {
+                            fill: #ff6f58;
+                        }
+
+                        .num-2 {
+                            fill: none;
+                        }
+                        </style>
+                    </defs>
+                    <g id="number_one" data-name="Number One">
+                        <path class="num-1"
+                            d="M702.46,269.93h51.16a6.38,6.38,0,0,1,6.4,6.4v360.3a6.37,6.37,0,0,1-6.4,6.4h-49a6.37,6.37,0,0,1-6.4-6.4V333.89a2.3,2.3,0,0,0-1.07-1.86,1.9,1.9,0,0,0-2.13-.27l-53.3,16.52a5.86,5.86,0,0,1-2.66.54,4.32,4.32,0,0,1-3.47-1.6,6.46,6.46,0,0,1-1.33-4.27l-1.6-35.18q0-5.31,4.27-7.46l57.56-28.78A22.71,22.71,0,0,1,702.46,269.93Z"
+                            transform="translate(79.08 -266.55)" />
+                        <rect class="num-2" width="1643.32" height="379.66" />
+                    </g>
+                </svg>
+            </div>
+
+
+            <div class="number_one_action">
+                <p>Melde Dich kostenlos an und​ erstelle ein Profil​</p>
+            </div>
+
+
+            <div class="line_one">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1643.32 707.82">
+                    <defs>
+                        <style>
+                        .ln-1,
+                        .ln-2 {
+                            fill: none;
+                        }
+
+                        .ln-1 {
+                            stroke: #44d4bc;
+                            stroke-miterlimit: 10;
+                            stroke-width: 46px;
+                        }
+                        </style>
+                    </defs>
+                    <g id="line_one" data-name="Line One">
+                        <path class="ln-1"
+                            d="M43.73,803.68v-417a171.83,171.83,0,0,1,343.66,0l.3,175a171.83,171.83,0,0,0,343.66,0V143"
+                            transform="translate(79.08 -119.63)" />
+                        <rect class="ln-2" width="1643.32" height="707.82" />
+                    </g>
+                </svg>
+            </div>
+
+
+            <div class="number_two">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1643.32 379.66">
+                    <defs>
+                        <style>
+                        .num-3 {
+                            fill: #ff6f58;
+                        }
+
+                        .num-4 {
+                            fill: none;
+                        }
+                        </style>
+                    </defs>
+                    <g id="number_two" data-name="Number Two">
+                        <path class="num-3"
+                            d="M17.36,588.67c.18.71.8,1.06,1.87,1.06H171.14a6.37,6.37,0,0,1,6.39,6.4v40.5a6.35,6.35,0,0,1-6.39,6.4H-58a6.11,6.11,0,0,1-4.53-1.86,6.16,6.16,0,0,1-1.87-4.54V598.26a10.88,10.88,0,0,1,3.2-8q40.5-43.17,93.81-106.06l25-29.32q49-57,49-86.34,0-21.85-15.45-35.72T51.21,319q-24.52,0-39.71,13.85T-3.69,369.6v13.86A6.17,6.17,0,0,1-5.55,388a6.17,6.17,0,0,1-4.53,1.87H-59.65A6.12,6.12,0,0,1-64.18,388,6.14,6.14,0,0,1-66,383.46V360.54q1.06-28.79,16.52-50.1t41.84-33.05q26.39-11.72,58.9-11.72,35.7,0,62.36,13.32t41,36.51q14.4,23.19,14.39,52,0,43.71-46.37,100.74-25.57,32-84.21,95.94L18.16,586.53A2.23,2.23,0,0,0,17.36,588.67Z"
+                            transform="translate(66.05 -263.37)" />
+                        <rect class="num-4" width="1643.32" height="379.66" />
+                    </g>
+                </svg>
+            </div>
+
+            <div class="number_two_action">
+                <p>Such Dir Deinen Favoriten oder Deine Favoritin aus allen Spitzensportler:innen aus und wähle
+                    einen Termin​</p>
+            </div>
+
+            <div class="line_two">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1643.32 707.82">
+                    <defs>
+                        <style>
+                        .ln-3,
+                        .ln-4 {
+                            fill: none;
+                        }
+
+                        .ln-3 {
+                            stroke: #44d4bc;
+                            stroke-miterlimit: 10;
+                            stroke-width: 46px;
+                        }
+                        </style>
+                    </defs>
+                    <g id="line_two" data-name="Line Two">
+                        <path class="ln-3"
+                            d="M731.35,804V387a171.83,171.83,0,0,0-343.66,0l-.3,175a171.83,171.83,0,0,1-343.66,0V143.35"
+                            transform="translate(79.08 -119.63)" />
+                        <rect class="ln-4" width="1643.32" height="707.82" />
+                    </g>
+                </svg>
+            </div>
+
+            <div class="number_three">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1643.32 379.92">
+                    <defs>
+                        <style>
+                        .num-5 {
+                            fill: #fd705d;
+                        }
+
+                        .num-6 {
+                            fill: none;
+                        }
+                        </style>
+                    </defs>
+                    <g id="number_three" data-name="Number Three">
+                        <path class="num-5"
+                            d="M845.6,524.17q0,29.87-9.06,52.77-12.27,33.59-40.51,52T727.8,647.29q-39.45,0-68.49-20T618,573.21q-6.4-16.51-7.47-43.17,0-6.4,6.4-6.4h49.57q6.39,0,6.39,6.4,1.07,17.06,5.33,27.18,4.8,17.06,17.86,26.91T727.8,594q35.19,0,48.51-32,6.91-15.46,6.93-40,0-27.18-8-44.77-13.86-29.85-48-29.85-9.07,0-24.52,10.66a8.45,8.45,0,0,1-3.73,1.07q-2.67,0-5.33-3.2l-24.52-34.11a9.2,9.2,0,0,1-1.6-4.27,6.6,6.6,0,0,1,2.14-4.79l87.94-86.35a1.74,1.74,0,0,0,.53-2.13,2.14,2.14,0,0,0-2.13-1.07H622.8a6.35,6.35,0,0,1-6.39-6.4v-40.5a6.37,6.37,0,0,1,6.39-6.4H835.47a6.38,6.38,0,0,1,6.4,6.4V322.7a10.84,10.84,0,0,1-3.2,8l-76.22,76.76c-1.43,1.42-.72,2.49,2.13,3.19q49.57,6.94,70.36,54.9Q845.59,491.13,845.6,524.17Z"
+                            transform="translate(79.08 -267.37)" />
+                        <rect class="num-6" width="1643.32" height="379.66" />
+                    </g>
+                </svg>
+
+            </div>
+            <div class="number_three_action">
+                <p>Lass Dir in Deinem persönlichen Video-Telefonat von den Besten der Besten helfen​.</p>
+            </div>
+
+            <div class="line_three">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1643.32 707.82">
+                    <defs>
+                        <style>
+                        .ln-5,
+                        .ln-6 {
+                            fill: none;
+                        }
+
+                        .ln-5 {
+                            stroke: #44d4bc;
+                            stroke-miterlimit: 10;
+                            stroke-width: 46px;
+                        }
+                        </style>
+                    </defs>
+                    <g id="line_three" data-name="Line Three">
+                        <path class="ln-5"
+                            d="M1419,805.38v-417a171.83,171.83,0,1,0-343.66,0l-.3,175a171.83,171.83,0,1,1-343.65,0V144.74"
+                            transform="translate(79.08 -119.63)" />
+                        <rect class="ln-6" width="1643.32" height="707.82" />
+                    </g>
+                </svg>
+            </div>
+            <button class="probier">PROBIER ES GLEICH AUS!​</button>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <!-- <div id="was_ist" class="row ">
         <div class="col-12">
             <div class="row">
                 <div class="col-1"></div>
@@ -174,52 +362,51 @@ get_header(); ?>
             </div>
         </div>
 
-
-        <div class="back1-img col-12 ">
-            <div class="white-back-2"></div>
-            <div class="circle cir_1">
-                <img src="<?php echo  get_template_directory_uri()?>/img/stripe.svg" alt="">
-            </div>
-            <div class="circle cir_2">
-                <img src="<?php echo  get_template_directory_uri()?>/img/stripe.svg" alt="">
-            </div>
-            <div class="abs-picture pic_1">
-                <img src="<?php echo  get_template_directory_uri()?>/img/tennis-player 1.png" alt="">
-            </div>
-            <div class="abs-picture pic_2">
-                <img src="<?php echo  get_template_directory_uri()?>/img/basketball-player 1.png" alt="">
-            </div>
+    <div class="back1-img col-12 ">
+        <div class="white-back-2"></div>
+        <div class="circle cir_1">
+            <img src="<?php echo  get_template_directory_uri()?>/img/stripe.svg" alt="">
         </div>
-
-    </div>
-    <div class="row">
-        <div class="back1-img col-12">
-            <img src="<?php echo  get_template_directory_uri()?>/img/back2.svg" alt="">
+        <div class="circle cir_2">
+            <img src="<?php echo  get_template_directory_uri()?>/img/stripe.svg" alt="">
         </div>
-    </div>
-    <div class="row">
-        <div class="back1-img col-12">
-            <div class="black-back-1"></div>
-            <div class="circle cir_3">
-                <img src="<?php echo  get_template_directory_uri()?>/img/stripe.svg" alt="">
-            </div>
-            <div class="abs-picture pic_3">
-                <img src="<?php echo  get_template_directory_uri()?>/img/run 1.png" alt="">
-            </div>
+        <div class="abs-picture pic_1">
+            <img src="<?php echo  get_template_directory_uri()?>/img/tennis-player 1.png" alt="">
+        </div>
+        <div class="abs-picture pic_2">
+            <img src="<?php echo  get_template_directory_uri()?>/img/basketball-player 1.png" alt="">
         </div>
     </div>
 
+</div>
+<div class="row">
+    <div class="back1-img col-12">
+        <img src="<?php echo  get_template_directory_uri()?>/img/back2.svg" alt="">
+    </div>
+</div>
+<div class="row">
+    <div class="back1-img col-12">
+        <div class="black-back-1"></div>
+        <div class="circle cir_3">
+            <img src="<?php echo  get_template_directory_uri()?>/img/stripe.svg" alt="">
+        </div>
+        <div class="abs-picture pic_3">
+            <img src="<?php echo  get_template_directory_uri()?>/img/run 1.png" alt="">
+        </div>
+    </div>
+</div>
 
+-->
 <!--       profi gallery         -->
 
-    <div id="die_profis" class="row justify-content-center with_background main_green">
-        <div class="col-md-10 col-sm-11 col-11">
-            <h2 class="section_title profis">DIE PROFIS​</h2>
-        </div>
-        <div class="back1-img col-12">
-            <div class="green-back-1">
-                <div class="owl-carousel" id="owl-carousel">
-                    <?php $args = array(  
+<div id="die_profis" class="row justify-content-center with_background main_green">
+    <div class="col-md-10 col-sm-11 col-11">
+        <h2 class="section_title profis">DIE PROFIS​</h2>
+    </div>
+    <div class="back1-img col-12">
+        <div class="green-back-1">
+            <div class="owl-carousel" id="owl-carousel">
+                <?php $args = array(  
                             'post_type' => 'cardgallery',
                             'post_status' => 'publish',
                             'posts_per_page' => -1, 
@@ -230,99 +417,102 @@ get_header(); ?>
                     $loop = new WP_Query( $args ); 
                     $count = 1;  
                     while ( $loop->have_posts() ) : $loop->the_post(); ?>
-                    <div class="card" id="gallery_card_<?php echo $count;?>" data-bs-toggle="modal"
-                        data-bs-target="#gallery_modal_<?php the_ID()?>">
-                        <?php if ($count % 2 == 0):?>
-                        <div class="card_placeholder"></div>
-                        <?php endif;?>
-                        <div class="card-body">
-                            <h5 class="card-title"><?php the_field('sub_title'); ?></h5>
-                            <img src="<?php the_field('image')?>" class="d-block w-100" alt="">
-                            <p class="card-text"><?php the_field('name')?></p>
-                        </div>
-                        <?php if ($count % 2 != 0):?>
-                        <div class="card_placeholder"></div>
-                        <?php endif;?>
+                <div class="card" id="gallery_card_<?php echo $count;?>" data-bs-toggle="modal"
+                    data-bs-target="#gallery_modal_<?php the_ID()?>">
+                    <?php if ($count % 2 == 0):?>
+                    <div class="card_placeholder"></div>
+                    <?php endif;?>
+                    <div class="card-body">
+                        <h5 class="card-title"><?php the_field('sub_title'); ?></h5>
+                        <img src="<?php the_field('image')?>" class="d-block w-100" alt="">
+                        <p class="card-text"><?php the_field('name')?></p>
                     </div>
+                    <?php if ($count % 2 != 0):?>
+                    <div class="card_placeholder"></div>
+                    <?php endif;?>
+                </div>
 
-                    <?php  $count++;
+                <?php  $count++;
                     endwhile;
                 wp_reset_postdata(); ?>
-                </div>
-                <?php  while ( $loop->have_posts() ) : $loop->the_post();?>
-                <div class="modal fade" id="gallery_modal_<?php the_ID()?>">
-                    <div class="modal-dialog modal-dialog-centered">
+            </div>
+            <?php  while ( $loop->have_posts() ) : $loop->the_post();?>
+            <div class="modal fade" id="gallery_modal_<?php the_ID()?>">
+                <div class="modal-dialog modal-dialog-centered">
 
-                        <div class="modal-content">
-                            <div class="modal-header">
+                    <div class="modal-content">
+                        <div class="modal-header">
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            <div class="header-title-wrapper"><h5 class="card-title"><?php the_field('sub_title'); ?></h5></div>
+                            <div class="header-title-wrapper">
+                                <h5 class="card-title"><?php the_field('sub_title'); ?></h5>
+                            </div>
                             <div class="title-placeholder"></div>
-                            </div> 
-                            <div class="modal-body card-modal-body">
-                                <div class="card-body-left">
-                                    <img src="<?php the_field('image')?>" class="d-block " alt="">
-                                    <p class="card-text"><?php the_field('name')?></p>
-                                </div>
-                                <div class="card-body-right">
-                                    <div class="card-right-text"><?php the_field('description')?>)</div>
-                                    <a href="https://app.brightensport.com/login" class="card-link">Book a session now<span class="book-arrow"><span class="fa  fa-arrow-right"></span></span></a>
-                                </div>
+                        </div>
+                        <div class="modal-body card-modal-body">
+                            <div class="card-body-left">
+                                <img src="<?php the_field('image')?>" class="d-block " alt="">
+                                <p class="card-text"><?php the_field('name')?></p>
+                            </div>
+                            <div class="card-body-right">
+                                <div class="card-right-text"><?php the_field('description')?>)</div>
+                                <a href="https://app.brightensport.com/login" class="card-link">Book a session now<span
+                                        class="book-arrow"><span class="fa  fa-arrow-right"></span></span></a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <?php endwhile;
+            </div>
+            <?php endwhile;
                 wp_reset_postdata(); ?>
-                <div class="book-link-wrapper">
-                    <a href="https://app.brightensport.com/user-signup" class="book-pro-link">SESSION BUCHEN​</a>
-                </div>
+            <div class="book-link-wrapper">
+                <a href="https://app.brightensport.com/user-signup" class="book-pro-link">SESSION BUCHEN​</a>
             </div>
         </div>
-        <div class="col-12 spitzensportler-message">
-            <p>Du bist selbst Spitzensportler:in?​</p>
-            <p><a href="https://app.brightensport.com/pro-signup" target="_blank">Dann melde Dich gleich an!</a>​</p>
-        </div>
     </div>
+    <div class="col-12 spitzensportler-message">
+        <p>Du bist selbst Spitzensportler:in?​</p>
+        <p><a href="https://app.brightensport.com/pro-signup" target="_blank">Dann melde Dich gleich an!</a>​</p>
+    </div>
+</div>
 
-    <?php the_content();?>
+<?php the_content();?>
 
-    <div id="testimonials" class="row justify-content-center with_background main_white">
-        <div class="col-md-10 col-sm-11 col-11">
-               <h2 class="section_title testimonials-heading">TESTIMONIALS​</h2>
-        </div>
-        <div class="back1-img col-12">
-            <div class="white-back-3">
-                <div class="owl-testimonial owl-carousel" id="owl-testimonial">
-                    <?php $args = array(  
+<div id="testimonials" class="row justify-content-center with_background main_white">
+    <div class="col-md-10 col-sm-11 col-11">
+        <h2 class="section_title testimonials-heading">TESTIMONIALS​</h2>
+    </div>
+    <div class="back1-img col-12">
+        <div class="white-back-3">
+            <div class="owl-testimonial owl-carousel" id="owl-testimonial">
+                <?php $args = array(  
                             'post_type' => 'testimonials',
                             'post_status' => 'publish',
                             'posts_per_page' => -1,                           
                         );
                     $loopt = new WP_Query( $args ); 
                     while ( $loopt->have_posts() ) : $loopt->the_post(); ?>
-                    <div class="card" id="gallery_card_<?php the_ID()?>">
-                        <div class="card-body">
-                            <img src="<?php the_field('image')?>" class="d-block w-100" alt="">
-                            <div class="card-text"><?php the_field('name')?></div>
-                            <div class="card-text"><?php the_field('age')?></div>
-                            <h5 class="card-title"><?php the_field('heading'); ?></h5>
-                            <div class="card-text"><?php the_field('content')?></div>
-                        </div>                        
+                <div class="card" id="gallery_card_<?php the_ID()?>">
+                    <div class="card-body">
+                        <img src="<?php the_field('image')?>" class="d-block w-100" alt="">
+                        <div class="card-text"><?php the_field('name')?></div>
+                        <div class="card-text"><?php the_field('age')?></div>
+                        <h5 class="card-title"><?php the_field('heading'); ?></h5>
+                        <div class="card-text"><?php the_field('content')?></div>
                     </div>
+                </div>
 
-                    <?php  endwhile;
+                <?php  endwhile;
                 wp_reset_postdata(); ?>
-                </div>                    
             </div>
         </div>
     </div>
+</div>
 
-        <div class="col-12 spitzensportler-message">
-            <p>Du bist selbst Spitzensportler:in?​</p>
-            <p><a href="https://app.brightensport.com/pro-signup" target="_blank">Dann melde Dich gleich an!</a>​</p>
-        </div>
-    </div>
+<div class="col-12 spitzensportler-message">
+    <p>Du bist selbst Spitzensportler:in?​</p>
+    <p><a href="https://app.brightensport.com/pro-signup" target="_blank">Dann melde Dich gleich an!</a>​</p>
+</div>
+</div>
 
 </div>
 

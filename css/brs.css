@@ -90,6 +90,146 @@ li {
   margin-bottom: 10px;
 }
 /*--------------------------------------------------------------
+grid
+--------------------------------------------------------------*/
+.grid_container{
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    padding: 0;
+}
+.circle_one{
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 6;
+  background-image: url(../img/stripe.svg);
+  background-size: 130%;
+  background-repeat: no-repeat;
+  background-position: right top;
+}
+.circle_two{
+  grid-column-start: 6;
+  grid-column-end: 8;
+  grid-row-start: 4;
+  grid-row-end: 7;
+  background-image: url(../img/stripe.svg);
+  background-size: 130%;
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+.circle_three{
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 6;
+  grid-row-end: 9;
+  background-image: url(../img/stripe.svg);
+  background-size: 130%;
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+.tennis-player{
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 6;
+  background-image: url(../img/tennis-player1.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+.basketball-player{
+  grid-column-start: 5;
+  grid-column-end: 8;
+  grid-row-start: 5;
+  grid-row-end: 7;
+  background-image: url(../img/basketball-player1.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+.run{
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 7;
+  grid-row-end: 10;
+  background-image: url(../img/run1.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left center;
+
+}
+.about_app_begining{
+  grid-column-start: 5;
+  grid-column-end: 7;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+.number_one{
+  grid-column-start: 2;
+  grid-column-end: 7;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+.number_one_action{
+  grid-column-start: 5;
+  grid-column-end: 7;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+.line_one{
+  grid-column-start: 2;
+  grid-column-end: 7;
+  grid-row-start: 4;
+  grid-row-end: 5;
+}
+.number_two{
+  grid-column-start: 2;
+  grid-column-end: 7;
+  grid-row-start: 5;
+  grid-row-end: 6;
+}
+.number_two_action{
+  grid-column-start: 4;
+  grid-column-end: 7;
+  grid-row-start: 5;
+  grid-row-end: 6;
+}
+.line_two{
+  grid-column-start: 2;
+  grid-column-end: 7;
+  grid-row-start: 6;
+  grid-row-end: 7;
+}
+.number_three{
+  grid-column-start: 2;
+  grid-column-end: 7;
+  grid-row-start: 7;
+  grid-row-end: 8;
+}
+.number_three_action{
+  grid-column-start: 5;
+  grid-column-end: 7;
+  grid-row-start: 7;
+  grid-row-end: 8;
+}
+.line_three{
+  grid-column-start: 2;
+  grid-column-end: 7;
+  grid-row-start: 8;
+  grid-row-end: 9;
+}
+button.probier{
+  grid-column-start: 5;
+  grid-column-end: 8;
+  grid-row-start: 9;
+  grid-row-end: 10;
+  width: fit-content;
+  text-align: center;
+  margin: auto;
+}
+/*--------------------------------------------------------------
 navigation
 --------------------------------------------------------------*/
 
@@ -159,6 +299,9 @@ navigation
 .footer-logo img {
   height: 35px;
   width: auto;
+}
+.navbar>.container-fluid{
+justify-content: flex-start !important;
 }
 
 @media (min-width: 992px) {

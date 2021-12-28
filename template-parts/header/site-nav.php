@@ -7,18 +7,19 @@
 ?>
 
 <?php if ( has_nav_menu( 'primary' ) ) : ?>
-	<div class="menu-wrapper">
+<div class="menu-wrapper">
     <nav id="site-navigation" class="navbar navbar-expand-lg primary-navigation" role="navigation">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-                <img src="<?php echo  get_template_directory_uri()?>/img/blogo-white.png">
-            </a>
-
             <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
+            <a class="navbar-brand" href="#">
+                <img src="<?php echo  get_template_directory_uri()?>/img/blogo-white.png">
+            </a>
+
+
             <div class="navbar-collapse offcanvas-collapse collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mb-2 mb-lg-0">
                     <?php
