@@ -91,6 +91,7 @@ get_header(); ?>
                             stroke: #44d4bc;
                             stroke-miterlimit: 10;
                             stroke-width: 46px;
+                            stroke-linecap: round;
                         }
                         </style>
                     </defs>
@@ -144,6 +145,7 @@ get_header(); ?>
                             stroke: #44d4bc;
                             stroke-miterlimit: 10;
                             stroke-width: 46px;
+                            stroke-linecap: round;
                         }
                         </style>
                     </defs>
@@ -195,6 +197,7 @@ get_header(); ?>
                             stroke: #44d4bc;
                             stroke-miterlimit: 10;
                             stroke-width: 46px;
+                            stroke-linecap: round;
                         }
                         </style>
                     </defs>
@@ -494,10 +497,11 @@ get_header(); ?>
                 <div class="card" id="gallery_card_<?php the_ID()?>">
                     <div class="card-body">
                         <img src="<?php the_field('image')?>" class="d-block w-100" alt="">
-                        <div class="card-text"><?php the_field('name')?></div>
-                        <div class="card-text"><?php the_field('age')?></div>
-                        <h5 class="card-title"><?php the_field('heading'); ?></h5>
-                        <div class="card-text"><?php the_field('content')?></div>
+                        <div class="card-text card-name"><?php the_field('name')?></div>
+                        <div class="card-text card-content"><?php the_field('age')?></div>
+                        <h5 class="card-title"><?php the_field('sport'); ?></h5>
+                        <div class="card-text"><?php the_field('heading')?></div>                        
+                        <div class="card-text card-content"><?php the_field('content')?></div>
                     </div>
                 </div>
 

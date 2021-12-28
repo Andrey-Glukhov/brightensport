@@ -28,8 +28,7 @@ jQuery(document).ready(function ($) {
     },
   });
 
-  jQuery(document).ready(function ($) {
-    var two = $("#owl-testimonial");
+  var two = $("#owl-testimonial");
     two.owlCarousel({
       loop: true,
       nav: true,
@@ -55,5 +54,14 @@ jQuery(document).ready(function ($) {
         },
       },
     });
+  $('.navbar-collapse .menu-item').on('click',function () {
+    var myCollapse =$('.navbar-collapse.show');
+    //$('.navbar-toggler').addClass('collapsed');
+    var bsCollapse = new bootstrap.Collapse(myCollapse, {
+      //toggle: false
+    });
+    bsCollapse.hide();  
+  });  
+ 
   });
-});
+
