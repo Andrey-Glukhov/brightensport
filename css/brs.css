@@ -134,7 +134,7 @@ grid
   grid-column-start: 1;
   grid-column-end: 3;
   grid-row-start: 1;
-  grid-row-end: 6;
+  grid-row-end: 5;
   background-image: url(../img/tennis-player1.png);
   background-size: contain;
   background-repeat: no-repeat;
@@ -154,7 +154,7 @@ grid
   grid-column-start: 1;
   grid-column-end: 4;
   grid-row-start: 7;
-  grid-row-end: 10;
+  grid-row-end: 9;
   background-image: url(../img/run1.png);
   background-size: contain;
   background-repeat: no-repeat;
@@ -247,7 +247,9 @@ button.probier{
   line-height: 1.9rem;
   margin-bottom: 0;
 }
-.straight_line_one{
+.straight_line_one,
+.straight_line_two,
+.straight_line_three{
   display: none;
 }
 .number_two_alternative{
@@ -825,7 +827,8 @@ Carousel
   text-align: center;
   margin-top: 2rem;
 }
-.book-link-wrapper a{
+.book-link-wrapper a,
+button.probier{
   color: var(--main_black);
   background-color: var(--main_red);
   text-align: center;
@@ -837,6 +840,7 @@ Carousel
   line-height: 1.5;
   padding: 0.5rem 40px;
   border-radius: 1.7rem;
+  border: none;
 }
 .profis{
   text-align: end;
@@ -950,6 +954,9 @@ Media
   grid-row-end: 8;
   padding-right: 80px;
 }
+button.probier{
+  margin-bottom: 30px;
+}
 }
 
 @media only screen and  (max-width: 767px) {
@@ -962,6 +969,23 @@ Media
 }
 .number_three_action {
   padding-right: 40px;
+}
+.basketball-player {
+  grid-column-start: 4;
+}
+.about_app_begining {
+  grid-column-start: 3;
+  grid-column-end: 6;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  text-align: center;
+  margin: 50px 0;
+}
+.book-link-wrapper a, button.probier{
+  font-size: 1.3rem;
+}
+button.probier{
+  margin-bottom: 30px;
 }
 }
 
@@ -1048,6 +1072,70 @@ button.probier{
   font-size: 1.2rem;
   line-height: 1.3rem;
 }
+.about_app_begining {
+  grid-column-start: 3;
+  grid-column-end: 6;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  text-align: center;
+  margin: 50px 0;
+}
+.line_three{
+  display: none;
+  } 
+  .straight_line_three{
+    grid-column-start: 2;
+    grid-column-end: 7;
+    grid-row-start: 11;
+    grid-row-end: 12;
+    display: block;
+  }
+  button.probier {
+    grid-column-start: 1;
+    grid-column-end: 8;
+    grid-row-start: 12;
+    grid-row-end: 13;
+    margin-bottom: 7rem;
+}
+.book-link-wrapper a, button.probier{
+  font-size: 1.4rem;
+}
+.basketball-player {
+  grid-column-start: 4;
+  grid-column-end: 8;
+  grid-row-start: 6;
+  grid-row-end: 9;
+}
+.run {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 10;
+  grid-row-end: 13;
+  background-position: left bottom;
+}
+.tennis-player {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 7;
+}
+.circle_one {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 4;
+  background-position: right bottom;
+}
+.circle_two {
+  grid-column-start: 5;
+}
+.circle_three {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 8;
+  grid-row-end: 13;
+  background-position: right top;
+}
 }
 
 @media only screen and (max-width: 575px) {
@@ -1122,8 +1210,8 @@ margin-bottom: 0;
 .accordion-button:not(.collapsed),
 .accordion-button.collapsed{
   font-size: 1.2rem !important;
-    line-height: 1.3rem;
-    padding: 1rem 1rem 1rem 2rem;
+  line-height: 1.3rem;
+  padding: 1rem 1rem 1rem 2rem;
 }
 }
 
@@ -1169,8 +1257,8 @@ margin-bottom: 0;
   grid-row-end: 8;
 }
 .number_one_action, .number_three_action {
-  grid-column-start: 2;
-  grid-column-end: 7;
+  grid-column-start: 3;
+  grid-column-end: 6;
 }
 .basketball-player{
   grid-row-start: 8;
@@ -1178,8 +1266,8 @@ margin-bottom: 0;
   background-position: right bottom;
 }
 button.probier{
-  grid-column-start: 2;
-  grid-column-end: 7;
+  grid-column-start: 1;
+  grid-column-end: 8;
   grid-row-start: 12;
   grid-row-end: 13;
   margin-bottom: 50px;
@@ -1242,5 +1330,34 @@ display: none;
 .tennis-player{
   grid-row-start: 3;
   grid-row-end: 7;
+}
+.run{
+  grid-row-start: 11;
+  grid-row-end: 13;
+}
+.about_app_begining {
+  grid-column-start: 2;
+  grid-column-end: 7;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  text-align: center;
+  margin: 50px 0;
+}
+.circle_one {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 4;
+  background-size: auto 100%;
+}
+.circle_three {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 8;
+  grid-row-end: 11;
+  background-size: auto 100%;
+}
+.book-link-wrapper a, button.probier{
+  font-size: 1.3rem;
 }
 }
