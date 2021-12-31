@@ -3,8 +3,8 @@
  * The header.
  */
 ?>
-<!doctype html>
-<html >
+<!doctype html >
+<html lang="de" xml:lang="de">
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>" />
 	<meta name="keywords" content="Brightensport" />

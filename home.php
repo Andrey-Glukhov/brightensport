@@ -132,6 +132,31 @@ get_header(); ?>
                     einen Termin​</p>
             </div>
 
+
+            <div class="number_two_alternative">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1643.32 379.66">
+                    <defs>
+                        <style>
+                        .nta-1 {
+                            fill: #fd705d;
+                        }
+
+                        .nta-2 {
+                            fill: none;
+                        }
+                        </style>
+                    </defs>
+                    <g id="number_two_alternative" data-name="Number Two Alternative">
+                        <path class="nta-1"
+                            d="M720.25,397.15c.17.72.8,1.07,1.86,1.07H874a6.35,6.35,0,0,1,6.39,6.4v40.5a6.37,6.37,0,0,1-6.39,6.4H644.83a6.38,6.38,0,0,1-6.4-6.4V406.75a10.86,10.86,0,0,1,3.2-8q40.5-43.17,93.81-106.06l25-29.32q49-57,49-86.35,0-21.84-15.46-35.71t-40-13.85q-24.51,0-39.71,13.85t-15.19,36.78V192a6.35,6.35,0,0,1-6.39,6.39H643.23a6.37,6.37,0,0,1-6.4-6.39V169q1.06-28.78,16.53-50.1T695.2,85.88q26.38-11.72,58.89-11.72,35.7,0,62.36,13.32t41,36.51q14.38,23.19,14.39,52,0,43.71-46.37,100.74-25.59,32-84.22,95.94L721.05,395A2.18,2.18,0,0,0,720.25,397.15Z"
+                            transform="translate(58.94 -71.86)" />
+                        <rect class="nta-2" width="1643.32" height="379.66" />
+                    </g>
+                </svg>
+
+            </div>
+
+
             <div class="line_two">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1643.32 707.82">
                     <defs>
@@ -209,7 +234,86 @@ get_header(); ?>
                     </g>
                 </svg>
             </div>
+
+
             <button class="probier">PROBIER ES GLEICH AUS!​</button>
+
+
+            <div class="straight_line_one">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1643.32 707.82">
+                    <defs>
+                        <style>
+                        .slo-1,
+                        .slo-2 {
+                            fill: none;
+                        }
+
+                        .slo-1 {
+                            stroke: #44d4bc;
+                            stroke-miterlimit: 10;
+                            stroke-width: 48px;
+                            stroke-linecap: round;
+                        }
+                        </style>
+                    </defs>
+                    <g id="straight_line_one" data-name="Straight Line One">
+                        <line class="slo-1" x1="810.42" y1="679.96" x2="810.42" y2="25.11" />
+                        <rect class="slo-2" width="1643.32" height="707.82" />
+                    </g>
+                </svg>
+
+            </div>
+
+            <div class="straight_line_two">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1643.32 707.82">
+                    <defs>
+                        <style>
+                        .slo-1,
+                        .slo-2 {
+                            fill: none;
+                        }
+
+                        .slo-1 {
+                            stroke: #44d4bc;
+                            stroke-miterlimit: 10;
+                            stroke-width: 48px;
+                            stroke-linecap: round;
+                        }
+                        </style>
+                    </defs>
+                    <g id="straight_line_two" data-name="Straight Line Two">
+                        <line class="slo-1" x1="810.42" y1="679.96" x2="810.42" y2="25.11" />
+                        <rect class="slo-2" width="1643.32" height="707.82" />
+                    </g>
+                </svg>
+
+            </div>
+
+            <div class="straight_line_three">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1643.32 707.82">
+                    <defs>
+                        <style>
+                        .slo-1,
+                        .slo-2 {
+                            fill: none;
+                        }
+
+                        .slo-1 {
+                            stroke: #44d4bc;
+                            stroke-miterlimit: 10;
+                            stroke-width: 48px;
+                            stroke-linecap: round;
+                        }
+                        </style>
+                    </defs>
+                    <g id="straight_line_three" data-name="Straight Line Three">
+                        <line class="slo-1" x1="810.42" y1="679.96" x2="810.42" y2="25.11" />
+                        <rect class="slo-2" width="1643.32" height="707.82" />
+                    </g>
+                </svg>
+
+            </div>
+
         </div>
     </div>
 
@@ -400,16 +504,16 @@ get_header(); ?>
 </div>
 
 -->
-<!--       profi gallery         -->
+    <!--       profi gallery         -->
 
-<div id="die_profis" class="row justify-content-center with_background main_green">
-    <div class="col-md-10 col-sm-11 col-11">
-        <h2 class="section_title profis">DIE PROFIS​</h2>
-    </div>
-    <div class="back1-img col-12">
-        <div class="green-back-1">
-            <div class="owl-carousel" id="owl-carousel">
-                <?php $args = array(  
+    <div id="die_profis" class="row justify-content-center with_background main_green">
+        <div class="col-md-10 col-sm-11 col-11">
+            <h2 class="section_title profis">DIE PROFIS​</h2>
+        </div>
+        <div class="back1-img col-12">
+            <div class="green-back-1">
+                <div class="owl-carousel" id="owl-carousel">
+                    <?php $args = array(  
                             'post_type' => 'cardgallery',
                             'post_status' => 'publish',
                             'posts_per_page' => -1, 
@@ -420,102 +524,103 @@ get_header(); ?>
                     $loop = new WP_Query( $args ); 
                     $count = 1;  
                     while ( $loop->have_posts() ) : $loop->the_post(); ?>
-                <div class="card" id="gallery_card_<?php echo $count;?>" data-bs-toggle="modal"
-                    data-bs-target="#gallery_modal_<?php the_ID()?>">
-                    <?php if ($count % 2 == 0):?>
-                    <div class="card_placeholder"></div>
-                    <?php endif;?>
-                    <div class="card-body">
-                        <h5 class="card-title"><?php the_field('sub_title'); ?></h5>
-                        <img src="<?php the_field('image')?>" class="d-block w-100" alt="">
-                        <p class="card-text"><?php the_field('name')?></p>
+                    <div class="card" id="gallery_card_<?php echo $count;?>" data-bs-toggle="modal"
+                        data-bs-target="#gallery_modal_<?php the_ID()?>">
+                        <?php if ($count % 2 == 0):?>
+                        <div class="card_placeholder"></div>
+                        <?php endif;?>
+                        <div class="card-body">
+                            <h5 class="card-title"><?php the_field('sub_title'); ?></h5>
+                            <img src="<?php the_field('image')?>" class="d-block w-100" alt="">
+                            <p class="card-text"><?php the_field('name')?></p>
+                        </div>
+                        <?php if ($count % 2 != 0):?>
+                        <div class="card_placeholder"></div>
+                        <?php endif;?>
                     </div>
-                    <?php if ($count % 2 != 0):?>
-                    <div class="card_placeholder"></div>
-                    <?php endif;?>
-                </div>
 
-                <?php  $count++;
+                    <?php  $count++;
                     endwhile;
                 wp_reset_postdata(); ?>
-            </div>
-            <?php  while ( $loop->have_posts() ) : $loop->the_post();?>
-            <div class="modal fade" id="gallery_modal_<?php the_ID()?>">
-                <div class="modal-dialog modal-dialog-centered">
+                </div>
+                <?php  while ( $loop->have_posts() ) : $loop->the_post();?>
+                <div class="modal fade" id="gallery_modal_<?php the_ID()?>">
+                    <div class="modal-dialog modal-dialog-centered">
 
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            <div class="header-title-wrapper">
-                                <h5 class="card-title"><?php the_field('sub_title'); ?></h5>
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                                <div class="header-title-wrapper">
+                                    <h5 class="card-title"><?php the_field('sub_title'); ?></h5>
+                                </div>
+                                <div class="title-placeholder"></div>
                             </div>
-                            <div class="title-placeholder"></div>
-                        </div>
-                        <div class="modal-body card-modal-body">
-                            <div class="card-body-left">
-                                <img src="<?php the_field('image')?>" class="d-block " alt="">
-                                <p class="card-text"><?php the_field('name')?></p>
-                            </div>
-                            <div class="card-body-right">
-                                <div class="card-right-text"><?php the_field('description')?>)</div>
-                                <a href="https://app.brightensport.com/login" class="card-link">Book a session now<span
-                                        class="book-arrow"><span class="fa  fa-arrow-right"></span></span></a>
+                            <div class="modal-body card-modal-body">
+                                <div class="card-body-left">
+                                    <img src="<?php the_field('image')?>" class="d-block " alt="">
+                                    <p class="card-text"><?php the_field('name')?></p>
+                                </div>
+                                <div class="card-body-right">
+                                    <div class="card-right-text"><?php the_field('description')?>)</div>
+                                    <a href="https://app.brightensport.com/login" class="card-link">Book a session
+                                        now<span class="book-arrow"><span class="fa  fa-arrow-right"></span></span></a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <?php endwhile;
+                <?php endwhile;
                 wp_reset_postdata(); ?>
-            <div class="book-link-wrapper">
-                <a href="https://app.brightensport.com/user-signup" class="book-pro-link">SESSION BUCHEN​</a>
+                <div class="book-link-wrapper">
+                    <a href="https://app.brightensport.com/user-signup" class="book-pro-link">SESSION BUCHEN​</a>
+                </div>
             </div>
         </div>
+        <div class="col-12 spitzensportler-message">
+            <p>Du bist selbst Spitzensportler:in?​</p>
+            <p><a href="https://app.brightensport.com/pro-signup" target="_blank">Dann melde Dich gleich an!</a>​</p>
+        </div>
     </div>
-    <div class="col-12 spitzensportler-message">
-        <p>Du bist selbst Spitzensportler:in?​</p>
-        <p><a href="https://app.brightensport.com/pro-signup" target="_blank">Dann melde Dich gleich an!</a>​</p>
-    </div>
-</div>
 
-<?php the_content();?>
+    <?php the_content();?>
 
-<div id="testimonials" class="row justify-content-center with_background main_white">
-    <div class="col-md-10 col-sm-11 col-11">
-        <h2 class="section_title testimonials-heading">TESTIMONIALS​</h2>
-    </div>
-    <div class="back1-img col-12">
-        <div class="white-back-3">
-            <div class="owl-testimonial owl-carousel" id="owl-testimonial">
-                <?php $args = array(  
+    <div id="testimonials" class="row justify-content-center with_background main_white">
+        <div class="col-md-10 col-sm-11 col-11">
+            <h2 class="section_title testimonials-heading">TESTIMONIALS​</h2>
+        </div>
+        <div class="back1-img col-12">
+            <div class="white-back-3">
+                <div class="owl-testimonial owl-carousel" id="owl-testimonial">
+                    <?php $args = array(  
                             'post_type' => 'testimonials',
                             'post_status' => 'publish',
                             'posts_per_page' => -1,                           
                         );
                     $loopt = new WP_Query( $args ); 
                     while ( $loopt->have_posts() ) : $loopt->the_post(); ?>
-                <div class="card" id="gallery_card_<?php the_ID()?>">
-                    <div class="card-body">
-                        <img src="<?php the_field('image')?>" class="d-block w-100" alt="">
-                        <div class="card-text card-name"><?php the_field('name')?></div>
-                        <div class="card-text card-content"><?php the_field('age')?></div>
-                        <h5 class="card-title"><?php the_field('sport'); ?></h5>
-                        <div class="card-text"><?php the_field('heading')?></div>                        
-                        <div class="card-text card-content"><?php the_field('content')?></div>
+                    <div class="card" id="gallery_card_<?php the_ID()?>">
+                        <div class="card-body">
+                            <img src="<?php the_field('image')?>" class="d-block w-100" alt="">
+                            <div class="card-text card-name"><?php the_field('name')?></div>
+                            <div class="card-text card-content"><?php the_field('age')?></div>
+                            <h5 class="card-title"><?php the_field('sport'); ?></h5>
+                            <div class="card-text"><?php the_field('heading')?></div>
+                            <div class="card-text card-content"><?php the_field('content')?></div>
+                        </div>
                     </div>
-                </div>
 
-                <?php  endwhile;
+                    <?php  endwhile;
                 wp_reset_postdata(); ?>
+                </div>
             </div>
         </div>
     </div>
-</div>
 
-<div class="col-12 spitzensportler-message">
-    <p>Du bist selbst Spitzensportler:in?​</p>
-    <p><a href="https://app.brightensport.com/pro-signup" target="_blank">Dann melde Dich gleich an!</a>​</p>
-</div>
+    <div class="col-12 spitzensportler-message">
+        <p>Du bist selbst Spitzensportler:in?​</p>
+        <p><a href="https://app.brightensport.com/pro-signup" target="_blank">Dann melde Dich gleich an!</a>​</p>
+    </div>
 </div>
 
 </div>

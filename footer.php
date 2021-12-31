@@ -43,7 +43,7 @@ dynamic_sidebar('true_foot');
         <div class="footer-logo col-md-4 col-sm-6 oder-1">
             <img src="<?php echo  get_template_directory_uri()?>/img/blogo-tuerkis.png" />
         </div>
-        <nav id="footer-navigation-left" class="footer-navigation col-md-2 col-sm-4 order-md-2 order-sm-3 order-3" role="navigation">
+        <nav id="footer-navigation-left" class="footer-navigation col-md-2 col-sm-4 col-6 order-md-2 order-sm-3 order-3" role="navigation">
 
 
             <?php
@@ -59,7 +59,7 @@ dynamic_sidebar('true_foot');
 				?>
         </nav><!-- #footer-navigation -->
 
-        <nav id="footer-navigation-right" class="footer-navigation col-md-2 col-sm-4 order-md-3 order-sm-4 order-4" role="navigation">
+        <nav id="footer-navigation-right" class="footer-navigation col-md-2 col-sm-4 order-md-3 order-sm-4 col-6 order-4" role="navigation">
 
 
             <?php
