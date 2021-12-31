@@ -788,6 +788,16 @@ Carousel
   
 }
 
+.white-back-3 .owl-carousel .owl-stage {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.white-back-3 .owl-carousel .owl-item {
+  display: flex;
+  height: auto !important;
+}
+
 .owl-prev {
   width: 15px;
   height: 100px;
