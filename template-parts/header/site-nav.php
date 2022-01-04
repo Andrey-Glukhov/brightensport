@@ -23,6 +23,7 @@
             <div class="navbar-collapse offcanvas-collapse collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mb-2 mb-lg-0">
                     <?php
+                    if (is_front_page()) {
 				wp_nav_menu(array(
 					'theme_location' => 'primary',
 					'container' => false,
@@ -31,6 +32,16 @@
 					'item_spacing' => 'preserve'
 				)
 				);
+            } else {
+                wp_nav_menu(array(
+					'theme_location' => 'header_add',
+					'container' => false,
+					'menu_class' => 'navbar ml-auto',
+					'items_wrap' => '<li id="%1$s" data-scroll class="navbar-item %2$s">%3$s</li>',
+					'item_spacing' => 'preserve'
+				)
+				);
+            }
 				?>
                 </ul>
             </div> <!-- #navbarSupportedContent -->

@@ -33,6 +33,7 @@ function brs_theme_setup(){
 	register_nav_menu('secondary', 'Header Buttons Navigation');
 	register_nav_menu('footermenu_left', 'Footer Navigation Left');
 	register_nav_menu('footermenu_right', 'Footer Navigation Right');
+	register_nav_menu('header_add', 'Header Additional Navigation');
 
 /*
 	==========================================
