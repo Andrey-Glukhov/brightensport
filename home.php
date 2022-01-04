@@ -38,7 +38,7 @@ get_header(); ?>
                         </marker>
                     </defs>
                     <g id="line-opener-topper" data-name="Line Opener Topper">
-                    <path class="ln-12" d="M125,23V500" marker-start="url(#round)" stroke-width="46"; /> -->
+                    <path class="ln-12" d="M123,23V500" marker-start="url(#round)" stroke-width="46"; /> -->
                     <!-- <path class="ln-12" d="M63.87,692.91V524.65" transform="translate(58.94 -497.9)"/> -->
                     <!-- <rect class="ln-13" width="1643.32" height="194.58"/> -->
                     </g>
