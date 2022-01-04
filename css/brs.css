@@ -275,8 +275,16 @@ button.probier{
   grid-column-end: 7;
   grid-row-start: 1;
   grid-row-end: 2;
-  margin-bottom: -50px;
+  /* margin-bottom: -50px; */
+  position: relative;
 }
+.line-opener-topper svg {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}    
 .slogan{
   grid-column-start: 3;
   grid-column-end: 6;

@@ -62,6 +62,25 @@ jQuery(document).ready(function ($) {
     });
     bsCollapse.hide();  
   });  
- 
+  setLineSize();
   });
 
+  window.addEventListener('resize', setLineSize);
+
+  function setLineSize () {
+    var line = document.querySelector('.ln-12');
+    var svgObj = document.querySelector('#f_line'); 
+    var block = document.querySelector('.line-opener-topper');
+    if (svgObj.getBoundingClientRect().height >0) {
+    var rate = block.getBoundingClientRect().height / svgObj.getBoundingClientRect().height; 
+    var boxStr = svgObj.getAttribute('viewBox');
+    var indStr = boxStr.lastIndexOf(' ');
+    boxStr = boxStr.slice(0,indStr + 1) +' ' + Math.round( Number(boxStr.slice(indStr + 1)) * rate);
+    document.querySelector('#f_line').setAttribute('viewBox', boxStr);
+    var lineStr = document.querySelector('.ln-12').getAttribute('d');
+    var indStr = lineStr.lastIndexOf('V');
+    lineStr = lineStr.slice(0,indStr + 1) + Math.round(Number(lineStr.slice(indStr + 1)) * rate);
+    document.querySelector('.ln-12').setAttribute('d', lineStr);
+    }
+  }
+ 
