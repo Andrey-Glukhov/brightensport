@@ -7,7 +7,69 @@ get_header(); ?>
 <div class="container-fluid main-wrapper">
     <div class="row">
         <div class="back1-img col-12 opener" style="background-image:url(<?php the_field('opener_image')?>);"></div>
-        <div class="col-1"></div>
+
+        <div class="opener_grid_container opener_grid">
+            <div class="slogan">
+                <h1>DEIN WEG MIT<br>
+                    BRIGHTENSPORT
+                </h1>
+            </div>
+            <div class="line-opener-topper">
+
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1643.32 181.93">
+                    <defs>
+                        <style>
+                        .ln-12,
+                        .ln-13 {
+                            fill: none;
+                        }
+
+                        .ln-12 {
+                            stroke: #44d4bc;
+                            stroke-miterlimit: 10;
+                            stroke-width: 46px;
+                            stroke-linecap: round;
+                        }
+                        </style>
+                    </defs>
+                    <g id="line-opener-topper" data-name="Line Opener Topper">
+                    <path class="ln-12" d="M63.87,692.91V524.65" transform="translate(58.94 -497.9)"/>
+                    <rect class="ln-13" width="1643.32" height="194.58"/>
+                    </g>
+                </svg>
+            </div>
+            <div class="line-opener">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1643.32 550.16">
+                    <defs>
+                        <style>
+                        .ln-10,
+                        .ln-11 {
+                            fill: none;
+                        }
+
+                        .ln-10 {
+                            stroke: #44d4bc;
+                            stroke-miterlimit: 10;
+                            stroke-width: 46px;
+                            stroke-linecap: round;
+                        }
+                        </style>
+                    </defs>
+                    <g id="line_opener" data-name="Line Opener">
+                        <path class="ln-10"
+                            d="M751.48,425V385.91a171.83,171.83,0,1,0-343.65,0l-.3,123.14a171.83,171.83,0,0,1-343.66,0V159.93"
+                            transform="translate(58.94 -159.93)" />
+                        <rect class="ln-11" width="1643.32" height="550.16" />
+                    </g>
+                </svg>
+            </div>
+            <div class="probier_wrapper"><button class="probier"
+                    onclick="window.open('https://app.brightensport.com/user-signup','_blank')">PROBIER ES GLEICH
+                    AUS!​</button></div>
+        </div>
+
+
+        <!-- <div class="col-1"></div>
         <div class="col-lg-4 col-md-5 col-sm-10 col-10 opener_overlay">
             <h1 class="page_title">DEIN WEG MIT<br>
                 BRIGHTENSPORT</h1>
@@ -24,7 +86,7 @@ get_header(); ?>
                     transform="translate(0 0)" />
             </svg>
 
-        </div>
+        </div> -->
     </div>
 
     <!--       steps line         -->
@@ -236,7 +298,8 @@ get_header(); ?>
             </div>
 
 
-            <button class="probier">PROBIER ES GLEICH AUS!​</button>
+            <button class="probier" onclick="window.open('https://app.brightensport.com/user-signup','_blank')">PROBIER
+                ES GLEICH AUS!​</button>
 
 
             <div class="straight_line_one">
@@ -615,11 +678,6 @@ get_header(); ?>
                 </div>
             </div>
         </div>
-    </div>
-
-    <div class="col-12 spitzensportler-message">
-        <p>Du bist selbst Spitzensportler:in?​</p>
-        <p><a href="https://app.brightensport.com/pro-signup" target="_blank">Dann melde Dich gleich an!</a>​</p>
     </div>
 </div>
 

@@ -255,6 +255,52 @@ button.probier{
 .number_two_alternative{
   display:none;
 }
+.opener_grid_container {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  padding: 0;
+  height: 95vh;
+  margin-top: 5vh;
+}
+.line-opener{
+  grid-column-start: 2;
+  grid-column-end: 7;
+  grid-row-start: 2;
+  grid-row-end: 5;
+}
+.line-opener-topper{
+  grid-column-start: 2;
+  grid-column-end: 7;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  margin-bottom: -50px;
+}
+.slogan{
+  grid-column-start: 3;
+  grid-column-end: 6;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  margin-left: -55px;
+}
+
+.opener_grid_container h1{
+  font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 600;
+    font-size: 4rem;
+    line-height: 3.7rem;
+    margin-bottom: 0;
+    color: #ffffff;
+}
+.probier_wrapper{
+  grid-column-start: 3;
+  grid-column-end: 6;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  display: flex;
+  justify-content: center;
+}
 /*--------------------------------------------------------------
 navigation
 --------------------------------------------------------------*/
