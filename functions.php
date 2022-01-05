@@ -17,13 +17,15 @@ wp_enqueue_style('bootstrap');
 wp_enqueue_script('Bootstrap');
 wp_enqueue_script( 'owl-js',  get_template_directory_uri() . '/js/owl/owl.carousel.min.js', array('jquery'), '1.0.0', true );
   
-//   wp_enqueue_script( 'scrollmagic', 'https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js', array('jquery'), '1.0.0', true );
-//   wp_enqueue_script( 'scrollindicator', 'https:////cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js', array('jquery'), '1.0.0', true );
-//   wp_enqueue_script( 'scrollanimation', 'https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js', array('jquery'), '1.0.0', true );
+   wp_enqueue_script( 'scrollmagic', 'https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js', array('jquery'), '1.0.0', true );
+   wp_enqueue_script( 'scrollindicator', 'https:////cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js', array('jquery'), '1.0.0', true );
+   wp_enqueue_script( 'scrollanimation', 'https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js', array('jquery'), '1.0.0', true );
+   wp_enqueue_script( 'gsap-js', 'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js', array('jquery'), '1.0.0', true );
 //   wp_enqueue_script( 'svg_js',  get_template_directory_uri() . '/js/svg.js', array('jquery'), '1.0.0', true );
-//   wp_enqueue_script( 'svg_path_js',  get_template_directory_uri() . '/js/svg.path.js', array('jquery'), '1.0.0', true );
 
-  wp_enqueue_script( 'brs-js', get_template_directory_uri() . '/js/brs.js', array('jquery', 'Bootstrap','owl-js'), '1.0.0', true );
+   //   wp_enqueue_script( 'svg_path_js',  get_template_directory_uri() . '/js/svg.path.js', array('jquery'), '1.0.0', true );
+
+  wp_enqueue_script( 'brs-js', get_template_directory_uri() . '/js/brs.js', array('jquery', 'Bootstrap', 'owl-js', 'scrollmagic', 'scrollanimation', 'gsap-js'), '1.0.0', true );
 }
 add_action( 'wp_enqueue_scripts', 'brs_script_enqueue' );
 

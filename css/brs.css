@@ -270,6 +270,9 @@ button.probier{
   grid-row-start: 2;
   grid-row-end: 5;
 }
+.line-opener svg {
+  vertical-align: initial;
+}
 .line-opener-topper{
   grid-column-start: 2;
   grid-column-end: 7;
@@ -546,7 +549,7 @@ footer
 Home Main
 --------------------------------------------------------------*/
 .main-wrapper {
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 .back1-img {
   padding: 0;
