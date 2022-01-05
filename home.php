@@ -631,7 +631,7 @@ get_header(); ?>
                                     <p class="card-text"><?php the_field('name')?></p>
                                 </div>
                                 <div class="card-body-right">
-                                    <div class="card-right-text"><?php the_field('description')?>)</div>
+                                    <div class="card-right-text"><?php the_field('description')?></div>
                                     <a href="https://app.brightensport.com/login" class="card-link">Book a session
                                         now<span class="book-arrow"><span class="fa  fa-arrow-right"></span></span></a>
                                 </div>
