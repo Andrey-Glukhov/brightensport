@@ -89,6 +89,10 @@ li {
   line-height: 1.5;
   margin-bottom: 10px;
 }
+figure img{
+	width:100%;
+	height:auto;
+}
 /*--------------------------------------------------------------
 grid
 --------------------------------------------------------------*/
@@ -386,6 +390,9 @@ navigation
   height: 35px;
   width: auto;
 }
+.navbar-brand{
+	z-index:10;
+}
 .navbar>.container-fluid{
 justify-content: flex-start !important;
 }
@@ -523,7 +530,7 @@ footer
   display: flex;
   justify-content: center;
 }
-.foot.widget.widget_block .wp-block-image>img{
+.foot.widget.widget_block .wp-block-image img{
   width: 50px;
   height: 50px;
   background-size: cover;
@@ -667,6 +674,15 @@ Home Main
 .line_container{
   position: relative;
 }
+.support-logoes img{
+	width:100%;
+	height:auto;
+}
+.support-logoes{
+	margin-top: -80px;
+    z-index: 10;
+    position: relative;
+}
 /*--------------------------------------------------------------
 FAQ
 --------------------------------------------------------------*/
@@ -764,9 +780,12 @@ Carousel
   font-weight: 600;
   font-size: 1.6rem;
   padding: 5px;
-  margin-bottom: 10px;
+  margin-bottom: 25px;
 }
-.card-text, .card-link {
+.owl-testimonial .card-title{
+	background-color: var(--main_green);
+}
+.card-link {
   color: var(--main_black);
   text-align: center;
   text-transform: capitalize;
@@ -775,9 +794,21 @@ Carousel
   font-size: 1.5rem;
   padding-top: 10px;
 }
+.card-text{
+  color: var(--main_black);
+  text-align: center;
+  font-family: 'Barlow', sans-serif;
+  font-weight: 600;  
+  font-size: 1.1rem;
+  margin-top: 10px;
+}
+
+.card-text.card-content{
+  padding: 0px 15px 10px 15px;
+}
 
 .card_placeholder {
-  height: 15vw;
+  height: 0;
 }
 .card-modal-body {
   display: flex;
@@ -909,6 +940,10 @@ button.probier{
   border-radius: 1.7rem;
   border: none;
 }
+.book-link-wrapper a:hover{
+	color: #ffffff;
+  background-color: var(--main_red);
+}
 .profis{
   text-align: end;
   color: #ffffff;
@@ -937,7 +972,8 @@ button.probier{
   padding: 1rem 3rem;
 }
 .white-back-3 .card-body {
-  box-shadow: 0 0 5px 5px rgba(68,212,188,0.6); 
+  border:3px solid #44d4bc;
+  border-radius:50px;
 }
 .white-back-3 .card {
   padding: 20px;
@@ -948,6 +984,9 @@ button.probier{
 }
 .card-content {
   font-weight: 400;
+}
+.owl-testimonial .card-body img{
+	padding: 5px 20px;
 }
 /*--------------------------------------------------------------
 Standard Template
@@ -985,6 +1024,26 @@ background-repeat: no-repeat;
       font-size: 3.2rem;
       line-height: 3.7rem;
     }
+
+.founder_portrait {
+	padding:0 25px;
+}
+.main_black p{
+	color:#ffffff;
+	font-family: "Barlow", sans-serif;
+    font-size: 1.1rem;
+    font-weight: 300;
+}
+.founder_p{
+	padding:0 25px;
+}
+.main_black .wp-block-separator{
+    width: 30%;
+    margin: auto;
+    opacity: 1;
+    color: #ffffff;
+	margin-bottom: 1rem;
+}
 /*--------------------------------------------------------------
 Media
 --------------------------------------------------------------*/

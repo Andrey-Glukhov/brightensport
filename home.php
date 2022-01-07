@@ -114,7 +114,7 @@ get_header(); ?>
 
             <div class="about_app_begining">
                 <p>Brightensport ist die Plattform, auf der Du die besten Spitzensportler:innen persönlich um Rat fragen
-                    kannst.​</p>
+                    kannst.</p>
             </div>
 
 
@@ -142,11 +142,11 @@ get_header(); ?>
 
 
             <div class="number_one_action">
-                <p>Melde Dich kostenlos an und​ erstelle ein Profil​</p>
+                <p>Melde Dich kostenlos an und erstelle ein Profil​</p>
             </div>
 
 
-            <div class="line_one sline_block">
+            <div class="line_one">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1643.32 707.82">
                     <defs>
                         <style>
@@ -164,7 +164,7 @@ get_header(); ?>
                         </style>
                     </defs>
                     <g id="line_one" data-name="Line One">
-                        <path class="ln-1 sline"
+                        <path class="ln-1"
                             d="M43.73,803.68v-417a171.83,171.83,0,0,1,343.66,0l.3,175a171.83,171.83,0,0,0,343.66,0V143"
                             transform="translate(79.08 -119.63)" />
                         <rect class="ln-2" width="1643.32" height="707.82" />
@@ -225,7 +225,7 @@ get_header(); ?>
             </div>
 
 
-            <div class="line_two sline_block">
+            <div class="line_two">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1643.32 707.82">
                     <defs>
                         <style>
@@ -243,7 +243,7 @@ get_header(); ?>
                         </style>
                     </defs>
                     <g id="line_two" data-name="Line Two">
-                        <path class="ln-3 sline"
+                        <path class="ln-3"
                             d="M731.35,804V387a171.83,171.83,0,0,0-343.66,0l-.3,175a171.83,171.83,0,0,1-343.66,0V143.35"
                             transform="translate(79.08 -119.63)" />
                         <rect class="ln-4" width="1643.32" height="707.82" />
@@ -274,10 +274,10 @@ get_header(); ?>
 
             </div>
             <div class="number_three_action">
-                <p>Lass Dir in Deinem persönlichen Video-Telefonat von den Besten der Besten helfen​.</p>
+                <p>Lass Dir in Deinem persönlichen Video-Telefonat von den Besten der Besten helfen.</p>
             </div>
 
-            <div class="line_three sline_block">
+            <div class="line_three">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1643.32 707.82">
                     <defs>
                         <style>
@@ -295,7 +295,7 @@ get_header(); ?>
                         </style>
                     </defs>
                     <g id="line_three" data-name="Line Three">
-                        <path class="ln-5 sline"
+                        <path class="ln-5"
                             d="M1419,805.38v-417a171.83,171.83,0,1,0-343.66,0l-.3,175a171.83,171.83,0,1,1-343.65,0V144.74"
                             transform="translate(79.08 -119.63)" />
                         <rect class="ln-6" width="1643.32" height="707.82" />
@@ -305,7 +305,7 @@ get_header(); ?>
 
 
             <button class="probier" onclick="window.open('https://app.brightensport.com/user-signup','_blank')">PROBIER
-                ES GLEICH AUS!​</button>
+                ES GLEICH AUS!</button>
 
 
             <div class="straight_line_one">
@@ -577,7 +577,7 @@ get_header(); ?>
 
     <div id="die_profis" class="row justify-content-center with_background main_green">
         <div class="col-md-10 col-sm-11 col-11">
-            <h2 class="section_title profis">DIE PROFIS​</h2>
+            <h2 class="section_title profis">DIE PROFIS</h2>
         </div>
         <div class="back1-img col-12">
             <div class="green-back-1">
@@ -642,13 +642,13 @@ get_header(); ?>
                 <?php endwhile;
                 wp_reset_postdata(); ?>
                 <div class="book-link-wrapper">
-                    <a href="https://app.brightensport.com/user-signup" class="book-pro-link">SESSION BUCHEN​</a>
+                    <a href="https://app.brightensport.com/user-signup" class="book-pro-link">SESSION BUCHEN</a>
                 </div>
             </div>
         </div>
         <div class="col-12 spitzensportler-message">
             <p>Du bist selbst Spitzensportler:in?​</p>
-            <p><a href="https://app.brightensport.com/pro-signup" target="_blank">Dann melde Dich gleich an!</a>​</p>
+            <p><a href="https://app.brightensport.com/pro-signup" target="_blank">Dann melde Dich gleich an!</a></p>
         </div>
     </div>
 
@@ -685,6 +685,11 @@ get_header(); ?>
             </div>
         </div>
     </div>
+<div class="row support-logoes">
+<div class="col-12">
+<img src="https://brightensport.com/wp-content/uploads/2022/01/Final-Exist-Banner-on-white-bg.png"/>
+</div>
+</div>
 </div>
 
 </div>
