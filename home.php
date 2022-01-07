@@ -10,8 +10,8 @@ get_header(); ?>
 
         <div class="opener_grid_container opener_grid">
             <div class="slogan">
-                <h1>DEIN WEG MIT<br>
-                    BRIGHTENSPORT
+                <h1>Dein Weg mit<br>
+                    brightensport
                 </h1>
             </div>
             <div class="line-opener-topper">
