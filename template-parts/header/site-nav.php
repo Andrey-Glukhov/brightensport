@@ -15,7 +15,7 @@
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <a class="navbar-brand" href="http://localhost:8888/brightensport/wordpress/">
+            <a class="navbar-brand" href="https://brightensport.com/">
                 <img src="<?php echo  get_template_directory_uri()?>/img/blogo-white.png">
             </a>
 
@@ -32,16 +32,16 @@
 					'item_spacing' => 'preserve'
 				)
 				);
-            } else {
-                wp_nav_menu(array(
-					'theme_location' => 'header_add',
-					'container' => false,
-					'menu_class' => 'navbar ml-auto',
-					'items_wrap' => '<li id="%1$s" data-scroll class="navbar-item %2$s">%3$s</li>',
-					'item_spacing' => 'preserve'
-				)
-				);
-            }
+            } //else {
+                //wp_nav_menu(array(
+					//'theme_location' => 'header_add',
+					//'container' => false,
+					//'menu_class' => 'navbar ml-auto',
+					//'items_wrap' => '<li id="%1$s" data-scroll class="navbar-item %2$s">%3$s</li>',
+					//'item_spacing' => 'preserve'
+				//)
+				//);
+           // }
 				?>
                 </ul>
             </div> <!-- #navbarSupportedContent -->

@@ -322,6 +322,8 @@ navigation
 
 .main_header {
   width: 100%;
+  position: fixed;
+  z-index: 10;
 }
 
 .primary-navigation {
@@ -420,10 +422,10 @@ justify-content: flex-start !important;
 }
 #menu-item-18 a {
   padding: 0 15px;
-  border: 2px solid #003641;
-  border-radius: 50px;
-  color: #003641 !important;
-  background: var(--main_green);
+  /* border: 2px solid #003641; */
+  border-radius: 50px; 
+  color: #ffffff !important;
+  background: var(--main_red);
 }
 #menu-item-19 {
   display: flex;
@@ -557,6 +559,7 @@ Home Main
 --------------------------------------------------------------*/
 .main-wrapper {
   /* overflow: hidden; */
+  padding-top: 50px;
 }
 .back1-img {
   padding: 0;
