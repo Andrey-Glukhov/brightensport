@@ -1,6 +1,7 @@
 jQuery(document).ready(function ($) {
-  var one = $("#owl-carousel");
 
+  if ($(".home").length > 0) {
+  var one = $("#owl-carousel");
   one.owlCarousel({
     loop: true,
     nav: true,
@@ -54,6 +55,24 @@ jQuery(document).ready(function ($) {
       },
     },
   });
+  setLineSize();
+  var controller = new ScrollMagic.Controller();
+
+  $(".sline_block").each(function () {
+    var line = $(this).find(".sline");
+    pathPrepare(line);
+    var scene = new ScrollMagic.Scene({
+      triggerElement: this,
+      duration: "80%",
+      reverse: false,
+      triggerHook: 0.8,
+    })
+      .setTween(gsap.to(line, { strokeDashoffset: 0, ease: Linear.easeNone }))
+      .addIndicators() // add indicators (requires plugin)
+      .addTo(controller);
+  });
+
+}
   $(".navbar-collapse .menu-item").on("click", function () {
     var myCollapse = $(".navbar-collapse.show");
     if (myCollapse.length > 0) {
@@ -63,7 +82,11 @@ jQuery(document).ready(function ($) {
       bsCollapse.hide();
     }
   });
-  setLineSize();
+ function pathPrepare($el) {
+    var lineLength = $el[0].getTotalLength();
+    $el.css("stroke-dasharray", lineLength);
+    $el.css("stroke-dashoffset", -lineLength);
+  }
 });
 
 window.addEventListener("resize", setLineSize);

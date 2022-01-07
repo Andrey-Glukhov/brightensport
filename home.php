@@ -146,7 +146,7 @@ get_header(); ?>
             </div>
 
 
-            <div class="line_one">
+            <div class="line_one sline_block">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1643.32 707.82">
                     <defs>
                         <style>
@@ -164,7 +164,7 @@ get_header(); ?>
                         </style>
                     </defs>
                     <g id="line_one" data-name="Line One">
-                        <path class="ln-1"
+                        <path class="ln-1 sline"
                             d="M43.73,803.68v-417a171.83,171.83,0,0,1,343.66,0l.3,175a171.83,171.83,0,0,0,343.66,0V143"
                             transform="translate(79.08 -119.63)" />
                         <rect class="ln-2" width="1643.32" height="707.82" />
@@ -225,7 +225,7 @@ get_header(); ?>
             </div>
 
 
-            <div class="line_two">
+            <div class="line_two sline_block">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1643.32 707.82">
                     <defs>
                         <style>
@@ -243,7 +243,7 @@ get_header(); ?>
                         </style>
                     </defs>
                     <g id="line_two" data-name="Line Two">
-                        <path class="ln-3"
+                        <path class="ln-3 sline"
                             d="M731.35,804V387a171.83,171.83,0,0,0-343.66,0l-.3,175a171.83,171.83,0,0,1-343.66,0V143.35"
                             transform="translate(79.08 -119.63)" />
                         <rect class="ln-4" width="1643.32" height="707.82" />
@@ -277,7 +277,7 @@ get_header(); ?>
                 <p>Lass Dir in Deinem persönlichen Video-Telefonat von den Besten der Besten helfen.</p>
             </div>
 
-            <div class="line_three">
+            <div class="line_three sline_block">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1643.32 707.82">
                     <defs>
                         <style>
@@ -295,7 +295,7 @@ get_header(); ?>
                         </style>
                     </defs>
                     <g id="line_three" data-name="Line Three">
-                        <path class="ln-5"
+                        <path class="ln-5 sline"
                             d="M1419,805.38v-417a171.83,171.83,0,1,0-343.66,0l-.3,175a171.83,171.83,0,1,1-343.65,0V144.74"
                             transform="translate(79.08 -119.63)" />
                         <rect class="ln-6" width="1643.32" height="707.82" />
