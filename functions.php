@@ -55,9 +55,9 @@ function brs_theme_setup(){
 add_action('init', 'brs_theme_setup');
 
 
-// add_filter( 'wp_nav_menu_items', 'brs_menu_items', 10, 2);
+add_filter( 'wp_nav_menu_items', 'brs_menu_items', 10, 2);
 
-// function brs_menu_items($items, $args) {
+ function brs_menu_items($items, $args) {
 //     // get array of '<li> ... </li>' strings
 // 	$items_array = [];
 // 	error_log('--->0' . print_r($args->menu->slug ,true));
@@ -72,8 +72,14 @@ add_action('init', 'brs_theme_setup');
 //     // $result = array_merge(array_slice($items_array[0], 0, $position), $homestring, array_slice($items_array[0], $position));
 //     // //error_log('--->3' . print_r($result,true));
 //     // $items = implode('', $result);
-//     return $items;
-// }
+	$str_button = '<li id="menu-item-999" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-999"><button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+	data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+	aria-label="Toggle navigation">
+	<span class="navbar-toggler-icon"></span>
+</button><li>';
+	$items = $items . $str_button;
+     return $items;
+ }
 
 //Add  sidebar
 function brs_register_wp_sidebars() {

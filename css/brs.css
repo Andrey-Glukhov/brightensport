@@ -410,6 +410,9 @@ justify-content: flex-start !important;
   .primary-navigation .navbar-collapse {
     justify-content: center;
   }
+  .navbar-toggler {
+    display: none;
+}
 }
 .secondary-menu-container {
   height: 100%;
@@ -930,7 +933,7 @@ Carousel
 }
 .book-link-wrapper a,
 button.probier{
-  color: var(--main_black);
+  color: #ffffff;
   background-color: var(--main_red);
   text-align: center;
   text-transform: uppercase;

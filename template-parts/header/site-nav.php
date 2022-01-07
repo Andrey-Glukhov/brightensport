@@ -10,11 +10,11 @@
 <div class="menu-wrapper">
     <nav id="site-navigation" class="navbar navbar-expand-lg primary-navigation" role="navigation">
         <div class="container-fluid">
-            <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+            <!-- <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
-            </button>
+            </button> -->
             <a class="navbar-brand" href="https://brightensport.com/">
                 <img src="<?php echo  get_template_directory_uri()?>/img/blogo-white.png">
             </a>
@@ -46,13 +46,9 @@
                 </ul>
             </div> <!-- #navbarSupportedContent -->
         </div> <!-- .container-fluid -->
-
     </nav><!-- #site-navigation -->
 
-
-
     <nav id="site-buttons" class="buttons-navigation" role="navigation">
-
         <?php
 		wp_nav_menu(
 			array(
@@ -64,6 +60,12 @@
 			)
 		);
 		?>
+		<!-- <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+    </button> -->
     </nav><!-- #site-navigation -->
+	
 </div>
 <?php endif; ?>
