@@ -800,6 +800,9 @@ Carousel
   font-size: 1.5rem;
   padding-top: 10px;
 }
+.card-link:hover {
+  color: var(--main_black);
+}
 .card-text{
   color: var(--main_black);
   text-align: center;
@@ -862,6 +865,11 @@ Carousel
 .card-body-left, .card-body-right {
   display: flex;
   flex-direction: column;
+}
+.card-body-left {
+  justify-content: flex-start;
+}
+.card-body-right {
   justify-content: space-between;
 }
 

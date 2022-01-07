@@ -632,8 +632,8 @@ get_header(); ?>
                                 </div>
                                 <div class="card-body-right">
                                     <div class="card-right-text"><?php the_field('description')?></div>
-                                    <a href="https://app.brightensport.com/login" class="card-link">Book a session
-                                        now<span class="book-arrow"><span class="fa  fa-arrow-right"></span></span></a>
+                                    <a href="https://app.brightensport.com/user-signup" class="card-link" target="_blank" rel="noopener noreferrer">Session buchen
+                                        <span class="book-arrow"><span class="fa  fa-arrow-right"></span></span></a>
                                 </div>
                             </div>
                         </div>
@@ -642,13 +642,13 @@ get_header(); ?>
                 <?php endwhile;
                 wp_reset_postdata(); ?>
                 <div class="book-link-wrapper">
-                    <a href="https://app.brightensport.com/user-signup" class="book-pro-link">SESSION BUCHEN</a>
+                    <a href="https://app.brightensport.com/user-signup" class="book-pro-link" target="_blank" rel="noopener noreferrer">SESSION BUCHEN</a>
                 </div>
             </div>
         </div>
         <div class="col-12 spitzensportler-message">
             <p>Du bist selbst Spitzensportler:in?​</p>
-            <p><a href="https://app.brightensport.com/pro-signup" target="_blank">Dann melde Dich gleich an!</a></p>
+            <p><a href="https://app.brightensport.com/pro-signup" target="_blank" rel="noopener noreferrer">Dann melde Dich gleich an!</a></p>
         </div>
     </div>
 
