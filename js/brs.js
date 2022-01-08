@@ -11,7 +11,7 @@ jQuery(document).ready(function ($) {
       '<i class="fa fa-angle-right" aria-hidden="true"></i>',
     ],
     dots: false,
-    margin: 10,
+    //margin: 10,
     responsiveClass: true,
     responsive: {
       0: {
@@ -38,13 +38,15 @@ jQuery(document).ready(function ($) {
       '<i class="fa fa-angle-right" aria-hidden="true"></i>',
     ],
     dots: false,
-    margin: 10,
+    //margin: 10,
     responsiveClass: true,
     responsive: {
       0: {
         items: 1,
+        dots: true,
+        nav: false,
       },
-      600: {
+      765: {
         items: 2,
       },
       1000: {

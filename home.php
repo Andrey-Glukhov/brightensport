@@ -660,7 +660,7 @@ get_header(); ?>
         </div>
         <div class="back1-img col-12">
             <div class="white-back-3">
-                <div class="owl-testimonial owl-carousel" id="owl-testimonial">
+                <div class="owl-testimonial owl-carousel owl-theme" id="owl-testimonial">
                     <?php $args = array(  
                             'post_type' => 'testimonials',
                             'post_status' => 'publish',
