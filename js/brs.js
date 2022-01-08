@@ -68,7 +68,7 @@ jQuery(document).ready(function ($) {
       triggerHook: 0.8,
     })
       .setTween(gsap.to(line, { strokeDashoffset: 0, ease: Linear.easeNone }))
-      .addIndicators() // add indicators (requires plugin)
+      //.addIndicators() 
       .addTo(controller);
   });
 
