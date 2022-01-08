@@ -10,8 +10,8 @@ get_header(); ?>
 
         <div class="opener_grid_container opener_grid">
             <div class="slogan">
-                <h1>DEIN WEG MIT<br>
-                    BRIGHTENSPORT
+                <h1>Dein Weg mit<br>
+                    brightensport
                 </h1>
             </div>
             <div class="line-opener-topper">
@@ -577,7 +577,7 @@ get_header(); ?>
 
     <div id="die_profis" class="row justify-content-center with_background main_green">
         <div class="col-md-10 col-sm-11 col-11">
-            <h2 class="section_title profis">DIE PROFIS</h2>
+            <h2 class="section_title profis">AUSGEWÄHLTE PROFIS</h2>
         </div>
         <div class="back1-img col-12">
             <div class="green-back-1">
