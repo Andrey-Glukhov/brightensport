@@ -16,7 +16,8 @@
                 <span class="navbar-toggler-icon"></span>
             </button> -->
             <a class="navbar-brand" href="https://brightensport.com/">
-                <img src="<?php echo  get_template_directory_uri()?>/img/blogo-white.png">
+                <img class="logo_long" src="<?php echo  get_template_directory_uri()?>/img/blogo-white.png">
+				<img class="logo_short" src="<?php echo  get_template_directory_uri()?>/img/bn_icon_teal.png">
             </a>
 
 

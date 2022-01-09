@@ -438,6 +438,9 @@ color: var(--main_red);
 .navbar-collapse.offcanvas-collapse.collapse.show{
   background-color: var(--main_black);
 }
+.logo_short{
+  display: none;
+}
 /*--------------------------------------------------------------
 footer
 --------------------------------------------------------------*/
@@ -959,6 +962,32 @@ Carousel
   text-align: center;
   margin-top: 2rem;
 }
+.book-link-wrapper:hover, button.probier:hover,
+#menu-item-18:hover, .mc4wp-form-fields>p>input[type=submit]:hover{
+  transform: scale(1.05);
+}
+button.owl-prev:hover,
+button.owl-next:hover{
+background: transparent !important;
+}
+
+button.owl-prev>svg:hover, 
+button.owl-next>svg:hover, 
+#menu-item-19:hover{
+  transform: scale(1.1);
+}
+
+#menu-item-18, #menu-item-19, 
+.book-link-wrapper, button.probier, button.owl-prev>svg, 
+button.owl-next>svg, .mc4wp-form-fields>p>input[type=submit]{
+  transition: all .4s ease-in-out;
+}
+
+.book-link-wrapper a:hover{
+  color: #ffffff;
+  background-color: var(--main_red);
+}
+
 .book-link-wrapper a,
 button.probier{
   color: #ffffff;
@@ -973,11 +1002,9 @@ button.probier{
   padding: 0.5rem 40px;
   border-radius: 1.7rem;
   border: none;
+  transition: all .2s ease-in-out;
 }
-.book-link-wrapper a:hover{
-	color: #ffffff;
-  background-color: var(--main_red);
-}
+
 .profis{
   text-align: end;
   color: #ffffff;
@@ -1162,6 +1189,10 @@ button.probier{
 .line-opener{
 display: none;
 }
+#secondary-menu-list .menu-item {
+  padding: 5px 5px;
+}
+
 }
 
 @media only screen and (max-width: 600px) {
@@ -1311,20 +1342,32 @@ button.probier{
   grid-row-end: 13;
   background-position: right top;
 }
-.probier_wrapper {
-  grid-column-start: 2;
-  grid-column-end: 14;
-  grid-row-start: 3;
-  grid-row-end: 4;
-  justify-self: center;
-  align-self: end;
-  z-index: 9;
-}
+
 .probier_wrapper>button.probier{
   margin-bottom: 0rem !important;
 }
 .white-back-3 {
   padding: 1rem 1rem;
+}
+
+.probier_wrapper {
+  grid-column-start: 2;
+  grid-column-end: 14;
+  grid-row-start: 2;
+  grid-row-end: 4;
+  justify-self: center;
+  align-self: center;
+  z-index: 9;
+  margin-top: 25%;
+}
+.opener {
+  background-position: top right;
+  background-size: 110% auto;
+  background-repeat: no-repeat;
+}
+.opener_grid_container h1 {
+  font-size: 3rem;
+  line-height: 3rem;
 }
 }
 
@@ -1366,7 +1409,7 @@ button.probier{
     font-size: 1.1rem;
   }
   .navbar-brand img, .footer-logo img {
-    height: 27px;
+    height: 40px;
     width: auto;
 }
 .buttons-navigation{
@@ -1403,49 +1446,64 @@ margin-bottom: 0;
   line-height: 1.3rem;
   padding: 1rem 1rem 1rem 2rem;
 }
-.opener {
-  position: absolute;
-  width: 100%;
-  height: 120vh;
-  background-position: top right;
-  background-size: 160% auto;
-  background-repeat: no-repeat;
-}
-.opener_grid_container h1 {
-  font-size: 3rem;
-  line-height: 3rem;
-}
 .probier_wrapper {
   grid-column-start: 2;
   grid-column-end: 14;
-  grid-row-start: 3;
-  grid-row-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 3;
   justify-self: center;
   align-self: center;
+  margin-top: 15%;
   z-index: 9;
+}
+.navbar{
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
 }
 }
 @media only screen and (max-width: 510px) {
   .opener {
-    background-size: 130% auto;
+    position: absolute;
+    width: 100%;
+    height: 120vh;
+    background-position: top right;
+    background-size: auto 65%;
+    background-repeat: no-repeat;
+  }
+  .probier_wrapper {
+    grid-column-start: 2;
+    grid-column-end: 14;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    justify-self: center;
+    align-self: center;
+    margin-bottom: 10%;
+    z-index: 9;
+  }
+.logo_long{
+display: none;
 }
-.probier_wrapper {
-  grid-column-start: 2;
-  grid-column-end: 14;
-  grid-row-start: 3;
-  grid-row-end: 5;
-  justify-self: center;
-  align-self: center;
-  z-index: 9;
+.logo_short{
+  display: block;
+}
+.slogan {
+  grid-row-start: 2;
+  grid-row-end: 3;
+  align-self: end;
+}
+.opener_grid_container h1{
+  color: #ffffff;
 }
 }
   @media only screen and (max-width: 425px) {
+    .probier_wrapper {
+      align-self: start;
+      margin-top: 80px;
+      margin-bottom: 0;
+    }
     a.navbar-brand {
       width: 100%;
-      padding-top: 10px;
-    }
-    a.navbar-brand>img {
-      padding-left: 0.75rem;
+      padding: 0;
     }
     .green-back-1{
       padding: 1rem 1rem;
@@ -1584,24 +1642,12 @@ display: none;
 .book-link-wrapper a, button.probier{
   font-size: 1.3rem;
 }
-.opener {
-  position: absolute;
-  width: 100%;
-  height: 120vh;
-  background-position: top right;
-  background-size: auto 65%;
-  background-repeat: no-repeat;
-}
-.probier_wrapper {
-  grid-column-start: 2;
-  grid-column-end: 14;
-  grid-row-start: 3;
-  grid-row-end: 4;
-  justify-self: center;
-  align-self: end;
-  z-index: 9;
-}
+
 .card {
   padding: 20px 0;
+}
+.navbar{
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 }
