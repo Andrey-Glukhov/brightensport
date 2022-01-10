@@ -1460,6 +1460,9 @@ margin-bottom: 0;
   padding-top: 0.2rem;
   padding-bottom: 0.2rem;
 }
+.support-logoes {
+  margin-top: -50px;
+}
 }
 @media only screen and (max-width: 510px) {
   .opener {

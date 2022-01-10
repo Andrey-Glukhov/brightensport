@@ -308,7 +308,7 @@ get_header(); ?>
                 ES GLEICH AUS!</button>
 
 
-            <div class="straight_line_one">
+            <div class="straight_line_one sline_block"">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1643.32 707.82">
                     <defs>
                         <style>
@@ -326,14 +326,14 @@ get_header(); ?>
                         </style>
                     </defs>
                     <g id="straight_line_one" data-name="Straight Line One">
-                        <line class="slo-1" x1="810.42" y1="679.96" x2="810.42" y2="25.11" />
+                        <line class="slo-1 sline" x1="810.42" y1="679.96" x2="810.42" y2="25.11" />
                         <rect class="slo-2" width="1643.32" height="707.82" />
                     </g>
                 </svg>
 
             </div>
 
-            <div class="straight_line_two">
+            <div class="straight_line_two sline_block"">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1643.32 707.82">
                     <defs>
                         <style>
@@ -351,14 +351,14 @@ get_header(); ?>
                         </style>
                     </defs>
                     <g id="straight_line_two" data-name="Straight Line Two">
-                        <line class="slo-1" x1="810.42" y1="679.96" x2="810.42" y2="25.11" />
+                        <line class="slo-1 sline" x1="810.42" y1="679.96" x2="810.42" y2="25.11" />
                         <rect class="slo-2" width="1643.32" height="707.82" />
                     </g>
                 </svg>
 
             </div>
 
-            <div class="straight_line_three">
+            <div class="straight_line_three sline_block"">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1643.32 707.82">
                     <defs>
                         <style>
@@ -376,7 +376,7 @@ get_header(); ?>
                         </style>
                     </defs>
                     <g id="straight_line_three" data-name="Straight Line Three">
-                        <line class="slo-1" x1="810.42" y1="679.96" x2="810.42" y2="25.11" />
+                        <line class="slo-1 sline" x1="810.42" y1="679.96" x2="810.42" y2="25.11" />
                         <rect class="slo-2" width="1643.32" height="707.82" />
                     </g>
                 </svg>
