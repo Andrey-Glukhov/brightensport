@@ -287,7 +287,7 @@ get_header(); ?>
                 ES GLEICH AUS!</button>
 
 
-            <div class="straight_line_one sline_block"">
+            <div class="straight_line_one sline_block">
                 <svg xmlns=" http://www.w3.org/2000/svg" viewBox="0 0 1643.32 707.82">
                 <defs>
                     <style>
@@ -312,7 +312,7 @@ get_header(); ?>
 
             </div>
 
-            <div class="straight_line_two sline_block"">
+            <div class="straight_line_two sline_block">
                 <svg xmlns=" http://www.w3.org/2000/svg" viewBox="0 0 1643.32 707.82">
                 <defs>
                     <style>
@@ -337,7 +337,7 @@ get_header(); ?>
 
             </div>
 
-            <div class="straight_line_three sline_block"">
+            <div class="straight_line_three sline_block">
                 <svg xmlns=" http://www.w3.org/2000/svg" viewBox="0 0 1643.32 707.82">
                 <defs>
                     <style>
