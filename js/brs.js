@@ -56,19 +56,50 @@ jQuery(document).ready(function ($) {
         },
       },
     });
+    
+    $(' .white-back-3 .owl-carousel .owl-item').addClass('item-aligned');
+
+    $('#owl-testimonial .card-body').on('click', function() {
+      var card = $(this).find('.card-text.card-content.fold');
+      if (card.length <= 0) {
+        return;
+      }
+      $(' .white-back-3 .owl-carousel .owl-item').addClass('item-aligned');
+      if (card.hasClass('content-hidden')) {
+        $('#owl-testimonial .card-body .card-text.card-content.fold').addClass('content-hidden');
+        $('.white-back-3 .owl-carousel .owl-item .card-body').each(function() {
+          this.style.height = '';
+        });
+        $('.point_down').show();
+        var that = this;
+        var height;
+        $(' .white-back-3 .owl-carousel .owl-item').each(function() {
+          if ($(this).find('.card-body')[0] != that) {
+            height = $(this).find('.card-body').css('height');
+            $(this).find('.card-body')[0].style.height = height;
+            $(this).removeClass('item-aligned');
+          }
+        });
+        $(this).find('.card-text.card-content.fold').removeClass('content-hidden');
+        $(this).find('.point_down').hide();
+      } else {
+        $(this).find('.card-text.card-content.fold').addClass('content-hidden');
+        $('.white-back-3 .owl-carousel .owl-item .card-body').each(function() {
+          this.style.height = '';
+        });
+        $(this).find('.point_down').show();
+      }
+    }); 
     setLineSize();
+    window.addEventListener("resize", setLineSize);
     var controller = new ScrollMagic.Controller();
     var parents;
-    // if ($(".straight_line_one").css("display") == "block") {
-
-    //   parents = $(".mob_line");
-    // } else {
-
+   
     parents = $(".sline_block");
-    //}
     parents.each(function () {
       if ($(this).css("display") == "block") {
         var line = $(this).find(".sline");
+        var lineLength_1 = line[0].getTotalLength(); // for Safari
         pathPrepare(line);
         var scene = new ScrollMagic.Scene({
           triggerElement: this,
@@ -77,7 +108,7 @@ jQuery(document).ready(function ($) {
           triggerHook: 0.8,
         })
           .setTween(
-            gsap.to(line, { strokeDashoffset: 0, ease: Linear.easeNone })
+            gsap.to(line, { strokeDashoffset: lineLength_1, ease: Linear.easeNone })
           )
           //.addIndicators() // add indicators (requires plugin)
           .addTo(controller);
@@ -94,18 +125,21 @@ jQuery(document).ready(function ($) {
     }
   });
   function pathPrepare($el) {
-    var lineLength = $el[0].getTotalLength();
+    var lineLength = $el[0].getTotalLength()*2; // for Safari
     $el.css("stroke-dasharray", lineLength);
     $el.css("stroke-dashoffset", -lineLength);
   }
 });
 
-window.addEventListener("resize", setLineSize);
+
 
 function setLineSize() {
   var line = document.querySelector(".ln-12");
   var svgObj = document.querySelector("#f_line");
   var block = document.querySelector(".line-opener-topper");
+  if (! block ) {
+    return
+  }
   if (svgObj.getBoundingClientRect().height > 0) {
     var rate =
       block.getBoundingClientRect().height /

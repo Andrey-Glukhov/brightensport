@@ -675,7 +675,8 @@ get_header(); ?>
                             <div class="card-text card-content"><?php the_field('age')?></div>
                             <h5 class="card-title"><?php the_field('sport'); ?></h5>
                             <div class="card-text"><?php the_field('heading')?></div>
-                            <div class="card-text card-content"><?php the_field('content')?></div>
+                            <div class="point_down"><i class="fas fa-chevron-down"></i></div>
+                            <div class="card-text card-content fold content-hidden"><?php the_field('content')?></div>
                         </div>
                     </div>
 
