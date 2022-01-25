@@ -251,6 +251,14 @@ button.probier{
   line-height: 1.9rem;
   margin-bottom: 0;
 }
+.number_one_action p>a,
+.number_two_action p>a,
+.number_three_action p>a{
+  color: var(--main_green);
+  text-decoration: underline;
+  cursor: pointer;
+}
+
 .straight_line_one,
 .straight_line_two,
 .straight_line_three{
@@ -318,7 +326,9 @@ button.probier{
 /*--------------------------------------------------------------
 navigation
 --------------------------------------------------------------*/
-
+#fragen_title{
+	margin:0;
+}
 .main_header {
   width: 100%;
   position: fixed;
@@ -696,7 +706,7 @@ FAQ
 button.accordion-button, .accordion-button:not(.collapsed){
   background: var(--main_green);
   border-radius: 50px !important;
-  color: white;
+  color: var(--main_black);
   font-family: "Barlow Condensed", sans-serif;
   font-size: 1.5rem;
   font-weight: 500;
@@ -779,7 +789,7 @@ Carousel
   position: relative;
 }
 .card-title {
-  background-color: var(--main_red);
+  background-color: var(--main_black);
   color: #ffffff;
   text-align: center;
   text-transform: uppercase;
@@ -1081,7 +1091,13 @@ background-size: cover;
 background-position: center;
 background-repeat: no-repeat;
 }
-
+.fragen_opener{
+  width: 100%;
+height: 70vh;
+background-size:  cover;
+background-position: top center;
+background-repeat: no-repeat;
+}
 .with_background>div{
   position: relative;
   }
@@ -1138,6 +1154,14 @@ Cookie notice
 .page-template #moove_gdpr_cookie_info_bar:not(.gdpr-full-screen-infobar) .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content button.mgbutton.moove-gdpr-infobar-settings-btn:hover {
   background-color: var(--main_black);
 }  
+
+/*Fragen
+--------------------------------------------------------------*/
+.fragen_title{
+color: var(--main_green);
+text-align: center;
+text-transform: uppercase;
+}
 /*--------------------------------------------------------------
 Media
 --------------------------------------------------------------*/
