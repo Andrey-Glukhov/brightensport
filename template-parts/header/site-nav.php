@@ -33,6 +33,7 @@
 					'item_spacing' => 'preserve'
 				)
 				);
+				
             } //else {
                 //wp_nav_menu(array(
 					//'theme_location' => 'header_add',
@@ -45,7 +46,7 @@
            // }
 				?>
                 </ul>
-            </div> <!-- #navbarSupportedContent -->
+			            
         </div> <!-- .container-fluid -->
     </nav><!-- #site-navigation -->
 

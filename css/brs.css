@@ -337,9 +337,12 @@ navigation
 
 .primary-navigation {
   background-color: var(--main_green);
+  flex: 70%
 }
 .navbar-toggler {
   z-index: 5;
+  /* position: absolute; */
+  right: 0;
 }
 .navbar-toggler-icon {
   background-image: url(../img/close_solid.svg);
@@ -389,11 +392,12 @@ navigation
 }
 
 .buttons-navigation {
-  position: fixed;
+  /* position: fixed; */
   top: 0;
   right: 0;
   height: 62px;
   z-index: 100;
+  background-color: var(--main_green);
 }
 .navbar-brand img,
 .footer-logo img {
@@ -406,6 +410,9 @@ navigation
 .navbar>.container-fluid{
 justify-content: flex-start !important;
 }
+.menu-wrapper {
+  display: flex;
+}
 
 @media (min-width: 992px) {
   .offcanvas-collapse {
@@ -416,7 +423,7 @@ justify-content: flex-start !important;
     visibility: visible;
   }
   .primary-navigation .navbar-collapse {
-    justify-content: center;
+    justify-content: flex-end;
   }
   .navbar-toggler {
     display: none;
@@ -430,6 +437,7 @@ justify-content: flex-start !important;
   margin: 0;
   height: 100%;
   align-items: center;
+  padding-left: 0;
 }
 #menu-item-18 a {
   padding: 0 15px;
