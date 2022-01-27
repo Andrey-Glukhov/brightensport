@@ -58,7 +58,7 @@ add_action('init', 'brs_theme_setup');
 add_filter( 'wp_nav_menu_items', 'brs_menu_items', 10, 2);
 
  function brs_menu_items($items, $args) {
-	 error_log('---arG---' . print_r($args,true));
+	// error_log('---arG---' . print_r($args,true));
 	if($args->theme_location == 'secondary') {
 		$str_button = '<li id="menu-item-999" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-999"><button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
 		data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
