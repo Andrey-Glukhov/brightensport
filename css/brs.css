@@ -333,7 +333,10 @@ navigation
   width: 100%;
   position: fixed;
   z-index: 15;
+  background-color: var(--main_green);
 }
+
+
 
 .primary-navigation {
   background-color: var(--main_green);
@@ -397,7 +400,7 @@ navigation
   right: 0;
   height: 62px;
   z-index: 100;
-  background-color: var(--main_green);
+  /* background-color: var(--main_green); */
 }
 .navbar-brand img,
 .footer-logo img {
@@ -412,6 +415,9 @@ justify-content: flex-start !important;
 }
 .menu-wrapper {
   display: flex;
+}
+footer .menu-wrapper {
+  display: inherit;
 }
 
 @media (min-width: 992px) {
