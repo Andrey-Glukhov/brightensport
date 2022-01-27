@@ -324,6 +324,66 @@ button.probier{
   grid-row-end: 4;
 }
 /*--------------------------------------------------------------
+about page
+--------------------------------------------------------------*/
+.about_grid_container {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(14, 1fr);
+  grid-template-rows: auto;
+  gap: 20px 0px;
+  padding: 0;
+  height: 95vh;
+  margin-top: 5vh;
+}
+.about_par_one{
+  grid-column-start: 3;
+  grid-column-end: 8;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 600;
+  font-size: 2.5rem;
+  line-height: 2.7rem;
+  margin-bottom: 0;
+  color: var(--main_black);
+}
+.basket{
+  grid-column-start: 10;
+  grid-column-end: 15;
+  grid-row-start: 1;
+  grid-row-end: 5;
+  background-image: url(../img/basket.png);
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: contain;
+}
+.income{
+  grid-column-start: 1;
+  grid-column-end: 15;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 600;
+  font-size: 6.5rem;
+  line-height: 4.7rem;
+  margin-bottom: 0;
+  color: var(--main_red);
+}
+.income>p{
+text-align: center;
+}
+.about_circle_one{
+  grid-column-start: 10;
+  grid-column-end: 15;
+  grid-row-start: 2;
+  grid-row-end: 6;
+  background-image: url(../img/stripe.svg);
+  background-size: 130%;
+  background-repeat: no-repeat;
+  background-position: left top;
+}
+/*--------------------------------------------------------------
 navigation
 --------------------------------------------------------------*/
 #fragen_title{
@@ -1067,7 +1127,7 @@ Standard Template
 }
 .standard_opener{
 width: 100%;
-height: 70vh;
+height: 85vh;
 background-size: cover;
 background-position: center;
 background-repeat: no-repeat;
