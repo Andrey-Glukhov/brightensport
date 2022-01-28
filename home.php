@@ -145,8 +145,8 @@ get_header(); ?>
                     </defs>
                     <g id="line_one" data-name="Line One">
                         <path class="ln-1 sline"
-                            d="M43.73,803.68v-417a171.83,171.83,0,0,1,343.66,0l.3,175a171.83,171.83,0,0,0,343.66,0V143"
-                            transform="translate(79.08 -119.63)" />
+                            d="M-121,568.31V987A171.83,171.83,0,0,1-292.87,1158.8,171.83,171.83,0,0,1-464.7,987l-.29-175A171.83,171.83,0,0,0-636.82,640.11,171.83,171.83,0,0,0-808.65,811.93v417"
+                            transform="translate(931.46 -544.91)" />
                         <rect class="ln-2" width="1643.32" height="707.82" />
                     </g>
                 </svg>
@@ -203,8 +203,8 @@ get_header(); ?>
 
             </div>
 
-
             <div class="line_two sline_block">
+
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1643.32 707.82">
                     <defs>
                         <style>
@@ -223,12 +223,13 @@ get_header(); ?>
                     </defs>
                     <g id="line_two" data-name="Line Two">
                         <path class="ln-3 sline"
-                            d="M731.35,804V387a171.83,171.83,0,0,0-343.66,0l-.3,175a171.83,171.83,0,0,1-343.66,0V143.35"
-                            transform="translate(79.08 -119.63)" />
+                            d="M-229.45,1060.79v418.66A171.83,171.83,0,0,0-57.62,1651.28a171.83,171.83,0,0,0,171.83-171.83l.29-175a171.83,171.83,0,1,1,343.66,0v417"
+                            transform="translate(352.26 -1037.07)" />
                         <rect class="ln-4" width="1643.32" height="707.82" />
                     </g>
                 </svg>
             </div>
+
 
             <div class="number_three">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1643.32 379.92">
@@ -275,8 +276,8 @@ get_header(); ?>
                     </defs>
                     <g id="line_three" data-name="Line Three">
                         <path class="ln-5 sline"
-                            d="M1419,805.38v-417a171.83,171.83,0,1,0-343.66,0l-.3,175a171.83,171.83,0,1,1-343.65,0V144.74"
-                            transform="translate(79.08 -119.63)" />
+                            d="M244.61,865.6v418.65a171.83,171.83,0,0,0,343.66,0l.3-175a171.83,171.83,0,1,1,343.65,0v417"
+                            transform="translate(587.77 -841.88)" />
                         <rect class="ln-6" width="1643.32" height="707.82" />
                     </g>
                 </svg>
@@ -289,75 +290,78 @@ get_header(); ?>
 
             <div class="straight_line_one sline_block">
                 <svg xmlns=" http://www.w3.org/2000/svg" viewBox="0 0 1643.32 707.82">
-                <defs>
-                    <style>
-                    .slo-1,
-                    .slo-2 {
-                        fill: none;
-                    }
+                    <defs>
+                        <style>
+                        .slo-1,
+                        .slo-2 {
+                            fill: none;
+                        }
 
-                    .slo-1 {
-                        stroke: #44d4bc;
-                        stroke-miterlimit: 10;
-                        stroke-width: 48px;
-                        stroke-linecap: round;
-                    }
-                    </style>
-                </defs>
-                <g id="straight_line_one" data-name="Straight Line One">
-                    <line class="slo-1 sline" x1="810.42" y1="679.96" x2="810.42" y2="25.11" />
-                    <rect class="slo-2" width="1643.32" height="707.82" />
-                </g>
+                        .slo-1 {
+                            stroke: #44d4bc;
+                            stroke-miterlimit: 10;
+                            stroke-width: 48px;
+                            stroke-linecap: round;
+                        }
+                        </style>
+                    </defs>
+                    <g id="straight_line_one" data-name="Straight Line One">
+                        <line class="slo-1 sline" x1="810.42" y1="679.96" x2="810.42" y2="25.11" />
+                        <rect class="slo-2" width="1643.32" height="707.82" />
+                    </g>
                 </svg>
 
             </div>
 
             <div class="straight_line_two sline_block">
                 <svg xmlns=" http://www.w3.org/2000/svg" viewBox="0 0 1643.32 707.82">
-                <defs>
-                    <style>
-                    .slo-1,
-                    .slo-2 {
-                        fill: none;
-                    }
+                    <defs>
+                        <style>
+                        .slo-1,
+                        .slo-2 {
+                            fill: none;
+                        }
 
-                    .slo-1 {
-                        stroke: #44d4bc;
-                        stroke-miterlimit: 10;
-                        stroke-width: 48px;
-                        stroke-linecap: round;
-                    }
-                    </style>
-                </defs>
-                <g id="straight_line_two" data-name="Straight Line Two">
-                    <line class="slo-1 sline" x1="810.42" y1="679.96" x2="810.42" y2="25.11" />
-                    <rect class="slo-2" width="1643.32" height="707.82" />
-                </g>
+                        .slo-1 {
+                            stroke: #44d4bc;
+                            stroke-miterlimit: 10;
+                            stroke-width: 48px;
+                            stroke-linecap: round;
+                        }
+                        </style>
+                    </defs>
+                    <g id="straight_line_two" data-name="Straight Line Two">
+                        <line class="slo-1 sline" x1="810.42" y1="679.96" x2="810.42" y2="25.11" />
+                        <rect class="slo-2" width="1643.32" height="707.82" />
+                    </g>
                 </svg>
 
             </div>
 
             <div class="straight_line_three sline_block">
                 <svg xmlns=" http://www.w3.org/2000/svg" viewBox="0 0 1643.32 707.82">
-                <defs>
-                    <style>
-                    .slo-1,
-                    .slo-2 {
-                        fill: none;
-                    }
-
-                    .slo-1 {
-                        stroke: #44d4bc;
-                        stroke-miterlimit: 10;
-                        stroke-width: 48px;
-                        stroke-linecap: round;
-                    }
-                    </style>
-                </defs>
-                <g id="straight_line_three" data-name="Straight Line Three">
-                    <line class="slo-1 sline" x1="810.42" y1="679.96" x2="810.42" y2="25.11" />
-                    <rect class="slo-2" width="1643.32" height="707.82" />
-                </g>
+                    <defs>
+                        <style>
+                        .slo-1,
+                        .slo-2 {
+                            fill: none;
+                        }
+                        .slo-1 {
+                            stroke: #44d4bc;
+                            stroke-miterlimit: 10;
+                            stroke-width: 48px;
+                            stroke-linecap: round;
+                        }
+                        </style>
+                    </defs>
+                    <!-- <g id="straight_line_three" data-name="Straight Line Three">
+                        <line class="slo-1 sline" x1="810.42" y1="679.96" x2="810.42" y2="25.11" />
+                        <rect class="slo-2" width="1643.32" height="707.82" />
+                    </g> -->
+                    <g id="straight_line_three" data-name="Straight Line Three">
+                        <line class="slo-1" x1="810.42" y1="25.11" x2="810.42" y2="679.96" />
+                        <rect class="slo-2" width="1643.32" height="707.82" />
+                    </g>
                 </svg>
 
             </div>

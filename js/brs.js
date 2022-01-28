@@ -108,7 +108,7 @@ jQuery(document).ready(function ($) {
           triggerHook: 0.8,
         })
           .setTween(
-            gsap.to(line, { strokeDashoffset: lineLength_1, ease: Linear.easeNone })
+            gsap.to(line, { strokeDashoffset: 0, ease: Linear.easeNone })
           )
           //.addIndicators() // add indicators (requires plugin)
           .addTo(controller);
@@ -125,9 +125,9 @@ jQuery(document).ready(function ($) {
     }
   });
   function pathPrepare($el) {
-    var lineLength = $el[0].getTotalLength()*2; // for Safari
+    var lineLength = $el[0].getTotalLength(); // for Safari
     $el.css("stroke-dasharray", lineLength);
-    $el.css("stroke-dashoffset", -lineLength);
+    $el.css("stroke-dashoffset", lineLength);
   }
 });
 

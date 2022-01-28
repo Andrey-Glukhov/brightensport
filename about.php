@@ -18,7 +18,9 @@ get_header(); ?>
                     Dir:​</p>
             </div>
             <div class="basket"></div>
+            <div class="ball"></div>
             <div class="about_circle_one"></div>
+            <div class="about_circle_two"></div>
             <div class="income">
                 <p>7,41 €​</p>
             </div>
