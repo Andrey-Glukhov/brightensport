@@ -330,11 +330,13 @@ about page
   position: relative;
   display: grid;
   grid-template-columns: repeat(14, 1fr);
+  grid-auto-rows: 1fr;
   gap: 20px 0px;
   padding: 0;
-  height: 95vh;
   margin-top: 5vh;
+  margin-bottom: -50px;
 }
+
 .about_par_one{
   grid-column-start: 3;
   grid-column-end: 8;
@@ -346,6 +348,7 @@ about page
   line-height: 2.7rem;
   margin-bottom: 0;
   color: var(--main_black);
+  z-index: 2;
 }
 .basket{
   grid-column-start: 10;
@@ -362,25 +365,28 @@ about page
   grid-column-start: 1;
   grid-column-end: 15;
   grid-row-start: 4;
-  grid-row-end: 6;
+  grid-row-end: 7;
   font-family: 'Barlow Condensed', sans-serif;
   font-weight: 600;
   font-size: 6.5rem;
   line-height: 4.7rem;
   margin-bottom: 0;
   color: var(--main_red);
-  margin: 40px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .income>p{
 text-align: center;
+margin: 0;
 }
 .about_circle_one{
-  grid-column-start: 10;
+  grid-column-start: 12;
   grid-column-end: 15;
   grid-row-start: 2;
-  grid-row-end: 6;
+  grid-row-end: 9;
   background-image: url(../img/stripe.svg);
-  background-size: 130%;
+  background-size: auto 100%;
   background-repeat: no-repeat;
   background-position: left top;
 }
@@ -388,12 +394,13 @@ text-align: center;
   grid-column-start: 1;
   grid-column-end: 5;
   grid-row-start: 6;
-  grid-row-end: 10;
+  grid-row-end: 13;
   background-image: url(../img/stripe.svg);
-  background-size: 130%;
+  background-size: auto 100%;
   background-repeat: no-repeat;
-  background-position: left top;
+  background-position: right top;
 }
+
 .ball{
   grid-column-start: 3;
   grid-column-end: 6;
@@ -408,14 +415,15 @@ text-align: center;
 .about_par_two{
   grid-column-start: 8;
   grid-column-end: 13;
-  grid-row-start: 6;
-  grid-row-end: 10;
+  grid-row-start: 7;
+  grid-row-end: 13;
   font-family: 'Barlow Condensed', sans-serif;
   font-weight: 600;
   font-size: 1.5rem;
-  line-height: 1.9rem;
+  line-height: 1.7rem;
   margin-bottom: 0;
   color: var(--main_black);
+  z-index: 1;
 }
 /*--------------------------------------------------------------
 navigation
@@ -1337,8 +1345,25 @@ Media
 }
 }
 
- @media only screen and (max-width: 1199px) {
-  
+ @media only screen and (max-width: 1081px) {
+  .about_par_one {
+    grid-column-start: 2;
+    grid-column-end: 10;
+  }
+  .about_par_two {
+    grid-column-start: 8;
+    grid-column-end: 14;
+    grid-row-end: 12;
+  }
+  .about_circle_one {
+    grid-row-end: 8;
+  }
+  .about_circle_two {
+    grid-row-end: 12;
+  }
+  .about_grid_container{
+    margin-bottom: 0;
+  }
 }
 
 @media only screen and  (max-width: 991px) {
@@ -1370,6 +1395,11 @@ Media
 }
 button.probier{
   margin-bottom: 30px;
+}
+}
+@media only screen and  (max-width: 810px) {
+  .about_par_two {
+    grid-column-start: 7;
 }
 }
 
@@ -1415,7 +1445,29 @@ display: none;
 #secondary-menu-list .menu-item {
   padding: 5px 5px;
 }
-
+.about_circle_one {
+  grid-row-end: 6;
+}
+.basket {
+  grid-row-end: 4;
+}
+.income {
+  grid-row-end: 5;
+}
+.ball {
+  grid-column-start: 2;
+  grid-column-end: 5;
+  grid-row-start: 4;
+  grid-row-end: 7;
+}
+.about_par_two {
+  grid-column-start: 6;
+  grid-row-start: 6;
+  grid-row-end: 10;
+}
+.about_circle_two {
+  grid-row-end: 10;
+}
 }
 
 @media only screen and (max-width: 600px) {
@@ -1720,6 +1772,40 @@ display: none;
 .opener_grid_container h1{
   color: #ffffff;
 }
+.about_par_one {
+  grid-column-start: 2;
+  grid-column-end: 14;
+  text-align: center;
+}
+.basket {
+  grid-row-start: 3;
+  grid-row-end: 6;
+}
+.about_circle_one {
+  grid-column-start: 11;
+  grid-column-end: 15;
+  grid-row-start: 1;
+  grid-row-end: 5;
+}
+.about_par_two {
+  grid-column-start: 2;
+  grid-column-end: 14;
+  grid-row-start: 6;
+  grid-row-end: 10;
+  text-align: center;
+}
+.ball {
+  grid-column-start: 2;
+  grid-column-end: 5;
+  grid-row-start: 4;
+  grid-row-end: 6;
+  background-position: bottom right;
+}
+.about_par_one>p{
+  margin-bottom: 25px;
+  font-size: 2.3rem;
+  line-height: 2.5rem;
+}
 }
   @media only screen and (max-width: 425px) {
     .probier_wrapper {
@@ -1868,12 +1954,23 @@ display: none;
 .book-link-wrapper a, button.probier{
   font-size: 1.3rem;
 }
-
 .card {
   padding: 20px 0;
 }
 .navbar{
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
+}
+.basket, .ball{
+  display: none;
+}
+.about_par_two {
+  grid-row-start: 5;
+  grid-row-end: 10;
+  margin-top: 40px;
+}
+.about_circle_two {
+  grid-row-start: 5;
+  grid-row-end: 9;
 }
 }

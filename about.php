@@ -32,7 +32,6 @@ get_header(); ?>
         </div>
     </div>
 
-
     <div class="standard-content-wrapper">
         <?php the_content('')?>
     </div>
