@@ -616,7 +616,6 @@ footer
 }
 .footer-contact p {
   margin-bottom: 0;
-  text-align: end;
 }
 
 .footer-navigation li a,
@@ -630,6 +629,9 @@ footer
 }
 .footer-navigation li a {
   text-decoration: none;
+}
+.footer_col_wrapper{
+  width: fit-content;
 }
 .mc4wp-form.mc4wp-form-41 {
   background-color: var(--main_black);
@@ -689,6 +691,7 @@ footer
     color: #ffffff;
     font-size: 1.2rem;
     text-transform: uppercase;
+    margin-bottom: 1.4rem;
 }
 /*--------------------------------------------------------------
 Home Main
@@ -1401,6 +1404,9 @@ button.probier{
   .about_par_two {
     grid-column-start: 7;
 }
+.footer-contact h3, .footer-navigation h3, .footer-navigation li a, .footer-contact p, .mc4wp-form-fields input, .footer-contact p > a{
+  font-size: 1rem;
+}
 }
 
 @media only screen and  (max-width: 767px) {
@@ -1467,6 +1473,9 @@ display: none;
 }
 .about_circle_two {
   grid-row-end: 10;
+}
+.footer_col_wrapper{
+  margin: 0 auto;
 }
 }
 
@@ -1737,6 +1746,9 @@ margin-bottom: 0;
 }
 .support-logoes {
   margin-top: -50px;
+}
+.footer_col_wrapper{
+  margin: 0;
 }
 }
 @media only screen and (max-width: 510px) {

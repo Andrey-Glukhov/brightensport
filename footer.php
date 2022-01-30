@@ -39,14 +39,16 @@ dynamic_sidebar('true_foot');
     </div>
    </div> -->
 
-    <div class="row justify-content-center footer-dark">
-        <div class="footer-logo col-md-4 col-sm-6 oder-1">
+    <div class="row justify-content-sm-between justify-content-start footer-dark">
+        <div class="footer-logo col-md-4 col-sm-12 oder-1">
             <img src="<?php echo  get_template_directory_uri()?>/img/blogo-tuerkis.png" />
         </div>
-        <nav id="footer-navigation-left" class="footer-navigation col-md-2 col-sm-4 col-6 order-md-2 order-sm-3 order-3" role="navigation">
-            <h3>Unternehmen</h3>
+        <div class="col-1 d-sm-none d-block"></div>
+        <nav id="footer-navigation-left" class="footer-navigation col-md-2 col-sm-4 col-5" role="navigation">
+            <div class="footer_col_wrapper">
+                <h3>Unternehmen</h3>
 
-            <?php
+                <?php
 				wp_nav_menu(
 					array(
 						'theme_location'  => 'footermenu_left',
@@ -57,12 +59,14 @@ dynamic_sidebar('true_foot');
 					)
 				);
 				?>
+            </div>
         </nav><!-- #footer-navigation -->
+        <div class="col-1 d-sm-none d-block"></div>
+        <nav id="footer-navigation-right" class="footer-navigation col-md-2 col-sm-4 col-5" role="navigation">
+            <div class="footer_col_wrapper">
+                <h3>Rechtliches</h3>
 
-        <nav id="footer-navigation-right" class="footer-navigation col-md-2 col-sm-4 order-md-3 order-sm-4 col-6 order-4" role="navigation">
-        <h3>Rechtliches</h3>
-
-            <?php
+                <?php
 				wp_nav_menu(
 					array(
 						'theme_location'  => 'footermenu_right',
@@ -73,11 +77,16 @@ dynamic_sidebar('true_foot');
 					)
 				);
 				?>
+            </div>
         </nav><!-- #footer-navigation -->
-        <div class="footer-contact col-md-4 col-sm-6 order-md-4 order-sm-2 order-2">
-        <h3>Kontakt</h3>
-            <p> <a target="_blank" href="mailto:hello@brightensport.com">hello@brightensport.com</a></p>
-            <p> <a target="_blank" href="https://app.brightensport.com/pro-signup">Für Spitzensportler:innen​</a></p>
+        <div class="col-1 d-sm-none d-block"></div>
+        <div class="footer-contact col-md-3 col-sm-4 col-6">
+            <div class="footer_col_wrapper">
+                <h3>Kontakt</h3>
+                <p> <a target="_blank" href="mailto:hello@brightensport.com">hello@brightensport.com</a></p>
+                <p> <a target="_blank" href="https://app.brightensport.com/pro-signup">Für Spitzensportler:innen​</a>
+                </p>
+            </div>
         </div>
     </div> <!-- row-->
     <div class="row footer-form">
