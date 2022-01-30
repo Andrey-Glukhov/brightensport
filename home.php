@@ -306,7 +306,7 @@ get_header(); ?>
                         </style>
                     </defs>
                     <g id="straight_line_one" data-name="Straight Line One">
-                        <line class="slo-1 sline" x1="810.42" y1="679.96" x2="810.42" y2="25.11" />
+                        <line class="slo-1 sline" x1="810.42" y1="25.11" x2="810.42" y2="679.96" />
                         <rect class="slo-2" width="1643.32" height="707.82" />
                     </g>
                 </svg>
@@ -331,7 +331,7 @@ get_header(); ?>
                         </style>
                     </defs>
                     <g id="straight_line_two" data-name="Straight Line Two">
-                        <line class="slo-1 sline" x1="810.42" y1="679.96" x2="810.42" y2="25.11" />
+                        <line class="slo-1 sline" x1="810.42" y1="25.11" x2="810.42" y2="679.96" />
                         <rect class="slo-2" width="1643.32" height="707.82" />
                     </g>
                 </svg>
@@ -354,12 +354,8 @@ get_header(); ?>
                         }
                         </style>
                     </defs>
-                    <!-- <g id="straight_line_three" data-name="Straight Line Three">
-                        <line class="slo-1 sline" x1="810.42" y1="679.96" x2="810.42" y2="25.11" />
-                        <rect class="slo-2" width="1643.32" height="707.82" />
-                    </g> -->
                     <g id="straight_line_three" data-name="Straight Line Three">
-                        <line class="slo-1" x1="810.42" y1="25.11" x2="810.42" y2="679.96" />
+                        <line class="slo-1 sline" x1="810.42" y1="25.11" x2="810.42" y2="679.96" />
                         <rect class="slo-2" width="1643.32" height="707.82" />
                     </g>
                 </svg>

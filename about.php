@@ -17,6 +17,10 @@ get_header(); ?>
                 <p>Weißt Du, wie viel deutsche Spitzensportler:innen durchschnittlich pro Stunde verdienen? Wir sagen es
                     Dir:​</p>
             </div>
+            <div class="about_par_two">
+                <p>Kein Witz! Und das ist schon inklusive Fördergeldern, Sponsoring, Nebenjobs und sogar Zuwendungen von der Familie.​​</p>
+                <p>Dabei haben sie unwahrscheinlich wertvolle Expertise, von der wir alle profitieren könnten. Deswegen haben wir brightensport entwickelt.​​​</p>
+            </div>
             <div class="basket"></div>
             <div class="ball"></div>
             <div class="about_circle_one"></div>

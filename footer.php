@@ -44,7 +44,7 @@ dynamic_sidebar('true_foot');
             <img src="<?php echo  get_template_directory_uri()?>/img/blogo-tuerkis.png" />
         </div>
         <nav id="footer-navigation-left" class="footer-navigation col-md-2 col-sm-4 col-6 order-md-2 order-sm-3 order-3" role="navigation">
-
+            <h3>Unternehmen</h3>
 
             <?php
 				wp_nav_menu(
@@ -60,7 +60,7 @@ dynamic_sidebar('true_foot');
         </nav><!-- #footer-navigation -->
 
         <nav id="footer-navigation-right" class="footer-navigation col-md-2 col-sm-4 order-md-3 order-sm-4 col-6 order-4" role="navigation">
-
+        <h3>Rechtliches</h3>
 
             <?php
 				wp_nav_menu(
@@ -75,6 +75,7 @@ dynamic_sidebar('true_foot');
 				?>
         </nav><!-- #footer-navigation -->
         <div class="footer-contact col-md-4 col-sm-6 order-md-4 order-sm-2 order-2">
+        <h3>Kontakt</h3>
             <p> <a target="_blank" href="mailto:hello@brightensport.com">hello@brightensport.com</a></p>
             <p> <a target="_blank" href="https://app.brightensport.com/pro-signup">Für Spitzensportler:innen​</a></p>
         </div>

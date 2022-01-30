@@ -330,7 +330,6 @@ about page
   position: relative;
   display: grid;
   grid-template-columns: repeat(14, 1fr);
-  grid-template-rows: auto;
   gap: 20px 0px;
   padding: 0;
   height: 95vh;
@@ -340,7 +339,7 @@ about page
   grid-column-start: 3;
   grid-column-end: 8;
   grid-row-start: 1;
-  grid-row-end: 3;
+  grid-row-end: 4;
   font-family: 'Barlow Condensed', sans-serif;
   font-weight: 600;
   font-size: 2.5rem;
@@ -352,7 +351,7 @@ about page
   grid-column-start: 10;
   grid-column-end: 15;
   grid-row-start: 1;
-  grid-row-end: 5;
+  grid-row-end: 6;
   background-image: url(../img/basket.png);
   background-repeat: no-repeat;
   background-position: top right;
@@ -362,14 +361,15 @@ about page
 .income{
   grid-column-start: 1;
   grid-column-end: 15;
-  grid-row-start: 3;
-  grid-row-end: 4;
+  grid-row-start: 4;
+  grid-row-end: 6;
   font-family: 'Barlow Condensed', sans-serif;
   font-weight: 600;
   font-size: 6.5rem;
   line-height: 4.7rem;
   margin-bottom: 0;
   color: var(--main_red);
+  margin: 40px 0;
 }
 .income>p{
 text-align: center;
@@ -384,16 +384,38 @@ text-align: center;
   background-repeat: no-repeat;
   background-position: left top;
 }
+.about_circle_two{
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 6;
+  grid-row-end: 10;
+  background-image: url(../img/stripe.svg);
+  background-size: 130%;
+  background-repeat: no-repeat;
+  background-position: left top;
+}
 .ball{
   grid-column-start: 3;
   grid-column-end: 6;
-  grid-row-start: 4;
-  grid-row-end: 5;
-  background-image: url(../img/basket.png);
+  grid-row-start: 5;
+  grid-row-end: 9;
+  background-image: url(../img/ball.png);
   background-repeat: no-repeat;
   background-position: top right;
   background-size: contain;
   z-index: 1;
+}
+.about_par_two{
+  grid-column-start: 8;
+  grid-column-end: 13;
+  grid-row-start: 6;
+  grid-row-end: 10;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 1.9rem;
+  margin-bottom: 0;
+  color: var(--main_black);
 }
 /*--------------------------------------------------------------
 navigation
@@ -648,11 +670,17 @@ footer
 }
 #footer-navigation-left ul, #footer-navigation-right ul{
   width: fit-content;
-  margin: auto;
   padding-left: 0;
 }
 .mc4wp-form-fields{
   margin: 25px auto 10px auto;
+}
+.footer-contact h3, .footer-navigation h3{
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 1.2rem;
+    text-transform: uppercase;
 }
 /*--------------------------------------------------------------
 Home Main
