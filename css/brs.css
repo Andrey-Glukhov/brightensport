@@ -1182,6 +1182,7 @@ button.probier{
 }
 .white-back-3 .card {
   padding: 20px;
+  /* width: 100%; */
 }  
 .card-name {
   font-size: 2rem;
