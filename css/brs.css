@@ -758,7 +758,6 @@ Home Main
 }
 .green-back-1 {
   width: 100%;
-  min-height: 90vh;
   background-color: var(--main_green);
   padding: 1rem 3rem;
 }
@@ -831,9 +830,11 @@ Home Main
 	height:auto;
 }
 .support-logoes{
-	margin-top: -80px;
     z-index: 10;
     position: relative;
+}
+#testimonials{
+  padding-bottom: 0;
 }
 /*--------------------------------------------------------------
 FAQ
@@ -1180,7 +1181,6 @@ button.probier{
 }
 .white-back-3 {
   width: 100%;
-  min-height: 90vh;
   background-color: #ffffff;
   padding: 1rem 3rem;
 }
@@ -1300,13 +1300,95 @@ text-transform: uppercase;
 /*--------------------------------------------------------------
 Media
 --------------------------------------------------------------*/
+@media only screen and (min-width: 1400px) {
+  .opener_grid_container h1 {
+    font-size: 7.5rem;
+    line-height: 7rem;
+  }
+  .number_one_action p, .number_two_action p, .number_three_action p, .about_par_two p{
+    font-size: 2.5rem;
+    line-height: 2.9rem;
+  }
+  .about_app_begining p,
+  .about_par_one p{
+    font-size: 4rem;
+    line-height: 4.2rem;
+    margin-bottom: 40px;
+  }
+  h2.section_title.profis,
+  h2.section_title.testimonials-heading,
+  .section_title.fragen_title{
+    margin-top: -70px;
+  }
+  .grid_container button.probier{
+    transform: translate(35px, 0);
+  }
+  .spitzensportler-message p, .spitzensportler-message p a, .card-text{
+    font-size: 1.5rem;
+  }
+  .card-title{
+    font-size: 1.7rem;
+  }
+  .margin_negative {
+    margin-top: -210px;
+  }
+  .income{
+    font-size: 9.5rem;
+  }
+  .about_par_one {
+    grid-column-end: 9;
+  }
+  .about_par_two {
+    grid-column-end: 14;
+  }
+  .about_circle_two {
+    grid-row-end: 12;
+  }
+  .about_circle_one {
+    grid-row-end: 8;
+  }
+  .card-text.card-content{
+    font-size: 1.1rem;
+  }
+}
+
+@media only screen and (min-width: 1400px) and (max-width: 1580px) {
+  .about_par_one {
+    grid-column-start: 2;
+  }
+}
+
 @media only screen and (max-width: 1400px) {
   .opener {
     height: 100vh;
 }
+.about_app_begining>p {
+  font-size: 2.9rem;
+  line-height: 3.1rem;
+}
+.number_one_action p, .number_two_action p, .number_three_action p{
+  font-size: 1.8rem;
+  line-height: 2.1rem;
+}
+.grid_container button.probier{
+  transform: translate(28px, 0);
+}
+h2.section_title.profis,
+h2.section_title.testimonials-heading,
+.section_title.fragen_title{
+  margin-top: -70px;
+}
 }
 
  @media only screen and (max-width: 1081px) {
+  .about_app_begining>p{
+    font-size: 2.4rem;
+    line-height: 2.6rem;
+  }
+  .number_one_action p, .number_two_action p, .number_three_action p{
+    font-size: 1.7rem;
+    line-height: 2rem;
+  }
   .about_par_one {
     grid-column-start: 2;
     grid-column-end: 10;
@@ -1346,8 +1428,8 @@ Media
 .number_one_action p, 
 .number_two_action p, 
 .number_three_action p {
-  font-size: 1.3rem;
-  line-height: 1.5rem;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
 }
 .number_three_action {
   grid-column-start: 5;
@@ -1359,8 +1441,20 @@ Media
 button.probier{
   margin-bottom: 30px;
 }
-
+.about_app_begining>p {
+  font-size: 2rem;
+  line-height: 2.4rem;
 }
+h2.section_title.profis,
+h2.section_title.testimonials-heading,
+.section_title.fragen_title{
+  margin-top: -30px;
+}
+.grid_container button.probier {
+ transform: translate(0, 0);
+}
+}
+
 @media only screen and  (max-width: 810px) {
   .about_par_two {
     grid-column-start: 7;
@@ -1437,6 +1531,14 @@ display: none;
 }
 .footer_col_wrapper{
   margin: 0 auto;
+}
+h2.section_title.profis,
+h2.section_title.testimonials-heading,
+.section_title.fragen_title{
+  margin-top: 0px;
+}
+.opener_grid_container{
+  height: 77vh;
 }
 }
 
@@ -1701,8 +1803,8 @@ margin-bottom: 0;
 .button.accordion-button, 
 .accordion-button:not(.collapsed),
 .accordion-button.collapsed{
-  font-size: 1.2rem !important;
-  line-height: 1.3rem;
+  font-size: 1.5rem !important;
+  line-height: 1.6rem;
   padding: 1rem 1rem 1rem 2rem;
 }
 .probier_wrapper {
