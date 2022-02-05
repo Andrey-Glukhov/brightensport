@@ -31,6 +31,8 @@ jQuery(document).ready(function ($) {
     var two = $("#owl-testimonial");
     two.owlCarousel({
       loop: true,
+      autoplay: false,
+      mouseDrag: false,
       nav: true,
       navText: [
         '<i class="fa fa-angle-left" aria-hidden="true"></i>',
@@ -59,7 +61,7 @@ jQuery(document).ready(function ($) {
     
     $(' .white-back-3 .owl-carousel .owl-item').addClass('item-aligned');
 
-    $('#owl-testimonial .card-body').on('click', function() {
+    $('#owl-testimonial').on('click', '.card-body', function() {
       var card = $(this).find('.card-text.card-content.fold');
       if (card.length <= 0) {
         return;
