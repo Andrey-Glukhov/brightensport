@@ -14,7 +14,7 @@ get_header(); ?>
         </div>
         <div class="col-md-8 col-sm-10 col-12">
         <?php
-$faq = new WP_Query(array( 'page_id' => '259' ));
+$faq = new WP_Query(array( 'page_id' => '434' ));
 if ( $faq->have_posts() ) : while ( $faq->have_posts() ) : $faq->the_post();
 ?>
         <?php if( have_rows('faq_group') ): ?>

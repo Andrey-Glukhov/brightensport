@@ -99,3 +99,4 @@ function addpagecontent_function() {
 	return $result;
 }
 add_shortcode('addpagecontent', 'addpagecontent_function');
+

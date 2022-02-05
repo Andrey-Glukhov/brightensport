@@ -459,7 +459,7 @@ navigation
   right: 0;
 }
 .navbar-toggler-icon {
-  background-image: url(../img/close_solid.svg);
+  background-image: url(../img/xmark-solid.svg);
 }
 .collapsed .navbar-toggler-icon {
   background-image: url(../img/bars_solid.svg);
@@ -670,6 +670,16 @@ footer
 .mc4wp-form-fields input::placeholder {
   color: #ffffff;
 }
+
+.mc4wp-response {  
+  width: 100%;
+  text-align: center;
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 1.6rem;
+  padding-top: 1rem;
+ }
 .foot.widget.widget_block .wp-block-group__inner-container{
   display: flex;
   justify-content: center;
@@ -906,6 +916,12 @@ Carousel
   border: none;
   background-color: transparent;
   cursor: pointer;
+}
+.green-back-1 .card-body {
+  transition:  all 0.2s;
+}
+.green-back-1 .card-body:hover {
+  transform: scale(1.05);
 }
 
 .card-body-right {

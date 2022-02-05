@@ -131,8 +131,20 @@ jQuery(document).ready(function ($) {
     $el.css("stroke-dasharray", lineLength);
     $el.css("stroke-dashoffset", lineLength);
   }
+
+  
 });
 
+function showPoup() {
+  var mailPopup = document.querySelector('.mc4wp-response');
+  if (mailPopup.innerHTML == '') {
+    return
+  }  
+  mailPopup.style.display = "block";
+  setTimeout(function() {
+  mailPopup.style.display = "none";
+  },3000);
+}
 
 
 function setLineSize() {
