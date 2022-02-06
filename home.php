@@ -14,9 +14,8 @@ get_header(); ?>
                     brightensport
                 </h1>
             </div>
-            <div class="line-opener-topper">
+            <!-- <div class="line-opener-topper">
                 <svg id="f_line" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1643.32 500">
-                    <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1643.32 181.93"> -->
                     <defs>
                         <style>
                         .ln-12,
@@ -26,26 +25,24 @@ get_header(); ?>
 
                         .ln-12 {
                             stroke: #44d4bc;
-                            < !-- stroke-miterlimit: 10;
-                            -->< !-- stroke-width: 46px;
-                            -->< !-- stroke-linecap: round;
-                            -->
+                            stroke-miterlimit: 10;
+                            stroke-width: 46px;
+                           stroke-linecap: round;
                         }
                         </style>
                         <marker id="round" viewBox="0 0 1 1" markerWidth="1" markerUnits="strokeWidth" markerHeight="1"
                             orient="auto" refX="0.5" refY="0.5">
                             <circle r="0.5" cx="0.5" cy="0.5" fill="#44d4bc" />
-                            <!-- cx="23" cy="23" -->
+
                         </marker>
                     </defs>
                     <g id="line-opener-topper" data-name="Line Opener Topper">
-                        <path class="ln-12" d="M123,23V500" marker-start="url(#round)" stroke-width="46" ; /> -->
-                        <!-- <path class="ln-12" d="M63.87,692.91V524.65" transform="translate(58.94 -497.9)"/> -->
-                        <!-- <rect class="ln-13" width="1643.32" height="194.58"/> -->
+                        <path class="ln-12" d="M123,23V500" marker-start="url(#round)" stroke-width="46" ; />
+
                     </g>
                 </svg>
-            </div>
-            <div class="line-opener">
+            </div> -->
+            <!-- <div class="line-opener">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1643.32 550.16">
                     <defs>
                         <style>
@@ -69,7 +66,7 @@ get_header(); ?>
                         <rect class="ln-11" width="1643.32" height="550.16" />
                     </g>
                 </svg>
-            </div>
+            </div> -->
             <div class="probier_wrapper"><button class="probier"
                     onclick="window.open('https://app.brightensport.com/user-signup','_blank')">PROBIER ES GLEICH
                     AUS!​</button></div>
