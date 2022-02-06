@@ -100,3 +100,10 @@ function addpagecontent_function() {
 }
 add_shortcode('addpagecontent', 'addpagecontent_function');
 
+function addblogcontent_function() {
+	ob_start();
+	get_template_part('template-parts/blog');
+	$result = ob_get_clean();
+	return $result;
+}
+add_shortcode('addblogcontent', 'addblogcontent_function');
