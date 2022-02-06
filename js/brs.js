@@ -47,7 +47,7 @@ jQuery(document).ready(function ($) {
           dots: true,
           nav: false,
         },
-        765: {
+        600: {
           items: 2,
         },
         1000: {
