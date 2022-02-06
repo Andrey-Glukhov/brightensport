@@ -269,10 +269,6 @@ button.probier{
 }
 .opener_grid_container {
   position: relative;
-  display: grid;
-  grid-template-columns: repeat(14, 1fr);
-  grid-template-rows: auto;
-  gap: 20px 0px;
   padding: 0;
   height: 95vh;
   margin-top: 5vh;
@@ -303,12 +299,17 @@ button.probier{
   right: 0;
 }    
 .slogan{
-  grid-column-start: 2;
-  grid-column-end: 14;
-  grid-row-start: 1;
-  grid-row-end: 2;
+  padding: 20px 50px;
+  text-align: end;
+  z-index: 10;
+  position: relative;
 }
-
+.probier_wrapper{
+    padding: 20px 50px;
+    text-align: end;
+    z-index: 10;
+    position: relative;
+}
 .opener_grid_container h1{
   font-family: 'Barlow Condensed', sans-serif;
     font-weight: 600;
@@ -317,12 +318,7 @@ button.probier{
     margin-bottom: 0;
     color: var(--main_black);
 }
-.probier_wrapper{
-  grid-column-start: 2;
-  grid-column-end: 14;
-  grid-row-start: 2;
-  grid-row-end: 4;
-}
+
 .about_app_begining>p{
   font-family: 'Barlow Condensed', sans-serif;
   font-weight: 600;
@@ -727,8 +723,8 @@ Home Main
 .opener{
   position: absolute;
   width: 100%;
-  height: 120vh;
-  background-position: top right;
+  height: 100vh;
+  background-position: top left;
   background-size: cover;
 }
 .opener_overlay{
@@ -1419,6 +1415,10 @@ Media
   .card-text.card-content{
     font-size: 1.1rem;
   }
+  .probier_wrapper{
+    padding: 60px 50px;
+    text-align: end;
+}
 }
 
 @media only screen and (min-width: 1400px) and (max-width: 1580px) {
@@ -1564,7 +1564,7 @@ button.probier{
 .opener {
   position: absolute;
   width: 100%;
-  height: 120vh;
+  height: 70vh;
   background-position: top right;
   background-size: 100% auto;
   background-repeat: no-repeat;
@@ -1607,9 +1607,27 @@ h2.section_title.testimonials-heading,
   margin-top: 0px;
 }
 .opener_grid_container{
-  height: 77vh;
+  height: 70vh;
 }
 }
+@media screen and (max-width: 767px) and (orientation: portrait) { 
+  #was_ist{
+    margin-top: -250px;
+  }
+ }
+ @media screen and (max-width: 767px) and (orientation: landscape) { 
+  .opener_grid_container{
+    height: 90vh;
+  }
+  .opener {
+    position: absolute;
+    width: 100%;
+    height: 90vh;
+    background-position: top right;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+  }
+ }
 
 @media only screen and (max-width: 600px) {
   .profis {
@@ -1768,17 +1786,12 @@ button.probier{
 }
 
 .probier_wrapper {
-  grid-column-start: 2;
-  grid-column-end: 14;
-  grid-row-start: 2;
-  grid-row-end: 4;
   justify-self: center;
   align-self: center;
   z-index: 9;
-  margin-top: 25%;
 }
 .opener {
-  background-position: top right;
+  background-position: top left;
   background-size: 110% auto;
   background-repeat: no-repeat;
 }
@@ -1877,13 +1890,8 @@ margin-bottom: 0;
   padding: 1rem 1rem 1rem 2rem;
 }
 .probier_wrapper {
-  grid-column-start: 2;
-  grid-column-end: 14;
-  grid-row-start: 2;
-  grid-row-end: 3;
   justify-self: center;
   align-self: center;
-  margin-top: 15%;
   z-index: 9;
 }
 .navbar{
@@ -1897,25 +1905,29 @@ margin-bottom: 0;
   margin: 0;
 }
 }
+@media screen and (max-width: 510px) and (orientation: portrait){
+  #was_ist {
+    margin-top: -50px;
+}
+}
+
 @media only screen and (max-width: 510px) {
   .opener {
-    position: absolute;
+    position: relative;
     width: 100%;
-    height: 120vh;
-    background-position: top right;
-    background-size: auto 65%;
+    height: 60vh;
+    background-position: top left;
+    background-size: cover;
     background-repeat: no-repeat;
   }
+  .opener_grid_container {
+    margin: 0;
+    height: auto;
+}
   .probier_wrapper {
-    grid-column-start: 2;
-    grid-column-end: 14;
-    grid-row-start: 3;
-    grid-row-end: 4;
-    justify-self: center;
-    align-self: center;
-    margin-bottom: 10%;
-    z-index: 9;
+    text-align: center;
   }
+
 .logo_long{
 display: none;
 }
@@ -1923,12 +1935,8 @@ display: none;
   display: block;
 }
 .slogan {
-  grid-row-start: 2;
-  grid-row-end: 3;
-  align-self: end;
-}
-.opener_grid_container h1{
-  color: #ffffff;
+  padding: 0 20px;
+  text-align: center;
 }
 .about_par_one {
   grid-column-start: 2;
@@ -1968,8 +1976,6 @@ display: none;
   @media only screen and (max-width: 425px) {
     .probier_wrapper {
       align-self: start;
-      margin-top: 80px;
-      margin-bottom: 0;
     }
     a.navbar-brand {
       width: 100%;
