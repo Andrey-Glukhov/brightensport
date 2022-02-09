@@ -94,6 +94,30 @@ figure img{
 	height:auto;
 }
 /*--------------------------------------------------------------
+blog
+--------------------------------------------------------------*/
+.blog_tumb img{
+width: 100%;
+height: auto;
+}
+.blog_tumb p{
+  background-color: var(--main_black);
+    color: #ffffff;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 600;
+    font-size: 1.2rem;
+    padding: 5px;
+    margin: 15px 0 45px 0;
+}
+.blog_tumb a{
+  text-decoration: none;
+}
+.blog_tumb{
+  padding: 20px 25px;
+}
+/*--------------------------------------------------------------
 grid
 --------------------------------------------------------------*/
 .grid_container{
