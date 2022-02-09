@@ -10,6 +10,7 @@
 	<meta name="keywords" content="Brightensport" />
   <meta name="description" content="Brightensport" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	
 	<?php wp_head(); ?>
 
 

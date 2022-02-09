@@ -5,7 +5,7 @@ $args = array(
 );
 
 $blog_query = new WP_Query( $args );?>
-<div class="row justify-content-sm-start justify-content-center justify-content-center with_background main_green margin_negative">
+<div class="row justify-content-sm-start justify-content-center justify-content-center with_background main_white margin_negative">
 <?php if ( $blog_query -> have_posts() ) : while ( $blog_query -> have_posts() ) : $blog_query -> the_post(); ?>
 
 

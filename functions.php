@@ -48,17 +48,17 @@ function brs_theme_setup(){
 	add_theme_support('post-formats', array('aside', 'chat', 'gallery','link','image','quote','status','video'));
 	add_theme_support('post-thumbnails');
 	add_theme_support('navigation-widgets');
-
+	add_theme_support( 'title-tag' );
 	add_theme_support('widgets');
 	
 }
-add_action('init', 'brs_theme_setup');
+add_action('after_setup_theme', 'brs_theme_setup');
 
 
 add_filter( 'wp_nav_menu_items', 'brs_menu_items', 10, 2);
 
  function brs_menu_items($items, $args) {
-	//error_log('---arG---' . print_r('========',true));
+	
 	if (is_front_page()) {
 		if($args->theme_location == 'secondary') {
 			$str_button = '<li id="menu-item-999" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-999"><button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
@@ -107,3 +107,4 @@ function addblogcontent_function() {
 	return $result;
 }
 add_shortcode('addblogcontent', 'addblogcontent_function');
+
